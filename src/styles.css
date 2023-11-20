@@ -25,6 +25,14 @@ body {
   background-color: var(--dark-purple);
 }
 
+button, input {
+  background: transparent;
+  border: none;
+}
+
+input:focus-visible{
+  outline: none;
+}
 
 app-root {
   display: block;
@@ -42,6 +50,10 @@ app-root {
 
 .align-center {
   align-items: center;
+}
+
+.dark-background {
+  background-color: var(--dark-purple);
 }
 
 .grey-background {
