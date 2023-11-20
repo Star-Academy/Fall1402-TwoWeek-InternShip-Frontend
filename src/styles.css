@@ -21,7 +21,7 @@
   color: white;
 }
 
-* {
+*{
   font-family: "Vazir", serif;
 }
 
@@ -76,7 +76,12 @@ app-root {
   background-color: var(--grey);
 }
 
+.gradient-background{
+  background: var(--gradient);
+}
+
 .full-width{
   width: 100%;
 }
+
 

@@ -121,4 +121,82 @@ header{
   top: 0.4rem;
 }
 
+.banner{
+  margin-top: 3rem;
+}
+
+.banner > *{
+  flex: 1;
+}
+
+.banner img {
+  width: 0;
+}
+
+.banner .title{
+  font-size: 3rem;
+}
+
+.banner .title span{
+  background: linear-gradient(to left, white, rgba(255, 255, 255, 0.1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 6rem;
+}
+
+.banner .title p{
+  margin: 1.2rem 0;
+  font-size: 1.2rem;
+  color: rgb(177, 177, 177);
+}
+
+.banner a{
+  padding: 1rem 2rem;
+  margin: 1.2rem 0 2.5rem 1.2rem;
+  font-size: 1.4rem;
+  border-radius: 5rem;
+}
+
+.banner a i{
+  margin-right: 0.3rem;
+  vertical-align: -0.3rem;
+}
+
+.banner .items ul{
+ gap: 2rem;
+}
+
+.banner .items ul li i {
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.banner .items p:first-child{
+  font-size: 1.6rem;
+}
+
+.banner .items p:last-child{
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+  color: grey;
+}
+
+.banner .items li .fa-truck-ramp-box::before {
+  background: linear-gradient(to right, #f96595, #974c75);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner .items li .fa-comments::before {
+  background: linear-gradient(to right, #7d5dc8, #4d4670);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner .items li .fa-star::before{
+  background: linear-gradient(to right, #fd9683, #644f54);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
