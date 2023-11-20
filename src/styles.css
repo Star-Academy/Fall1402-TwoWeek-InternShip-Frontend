@@ -5,12 +5,24 @@
   --gradient: linear-gradient(to right, #8854ff, #6268fc, #ed68c3);
 }
 
+@font-face {
+  font-family: Vazir;
+  src: url('assets/fonts/Vazir.eot');
+  src: url('assets/fonts/Vazir.woff') format('woff'),
+  url('assets/fonts/Vazir.ttf') format('truetype');
+  font-weight: normal;
+}
+
 *, *::before, *::after {
   direction: rtl;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: white;
+}
+
+* {
+  font-family: "Vazir", serif;
 }
 
 html{
