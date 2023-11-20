@@ -1,0 +1,40 @@
+.top-header {
+  margin-top: 5px;
+}
+
+.top-header .logo {
+  padding: 5px;
+  border-radius: 10px;
+  height: 55px;
+  margin-left: 10px;
+}
+
+.top-header .navigate {
+  margin: auto;
+}
+
+.top-header .navigate ul li a {
+  display: block;
+  padding: 20px 15px;
+  color: #b1b1b1;
+}
+
+.top-header .navigate ul .active a {
+  color: white;
+  border-top: 3px solid white;
+}
+
+.top-header .cart {
+  padding: 20px;
+}
+
+.top-header .account {
+  background-color: white;
+  color: var(--dark-purple);
+  padding: 15px;
+  border-radius: 50px;
+}
+
+.top-header .account i::before{
+  color: var(--dark-purple);
+}

@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
   --dark-purple: #070f1c;
-  --grey: #151a2d;
+  --grey: #222e48;
   --gradient: linear-gradient(to right, #8854ff, #6268fc, #ed68c3);
 }
 
@@ -10,6 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
 }
 
 ul li {
@@ -22,8 +23,8 @@ a {
 
 body {
   background-color: var(--dark-purple);
-  color: white;
 }
+
 
 app-root {
   display: block;
@@ -43,4 +44,11 @@ app-root {
   align-items: center;
 }
 
+.grey-background {
+  background-color: var(--grey);
+}
+
+.full-width{
+  width: 100%;
+}
 
