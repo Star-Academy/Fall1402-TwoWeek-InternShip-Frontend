@@ -1,11 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-:root{
+:root {
   --dark-purple: #070f1c;
   --grey: #151a2d;
   --gradient: linear-gradient(to right, #8854ff, #6268fc, #ed68c3);
 }
 
-*, *::before, *::after{
+*, *::before, *::after {
   direction: rtl;
   margin: 0;
   padding: 0;
@@ -16,11 +16,31 @@ ul li {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-body{
+body {
   background-color: var(--dark-purple);
   color: white;
 }
+
+app-root {
+  display: block;
+  width: min(1140px, 90%);
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+
