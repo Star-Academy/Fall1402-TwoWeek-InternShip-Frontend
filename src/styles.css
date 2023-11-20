@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-  --dark-purple: #070f1c;
+  --dark: #070f1c;
+  --dark-purple: #151a2d;
   --grey: #222e48;
+  --dark-white: #b1b1b1;
   --gradient: linear-gradient(to right, #8854ff, #6268fc, #ed68c3);
 }
 
@@ -38,7 +40,7 @@ a {
 }
 
 body {
-  background-color: var(--dark-purple);
+  background-color: var(--dark);
 }
 
 button, input {
@@ -51,9 +53,9 @@ input:focus-visible{
 }
 
 app-root {
-  display: block;
-  width: min(1140px, 90%);
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .flex {
@@ -68,8 +70,12 @@ app-root {
   align-items: center;
 }
 
+.space-between-content{
+  justify-content: space-between;
+}
+
 .dark-background {
-  background-color: var(--dark-purple);
+  background-color: var(--dark);
 }
 
 .grey-background {
