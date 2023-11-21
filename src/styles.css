@@ -70,6 +70,10 @@ app-root {
   align-items: center;
 }
 
+.align-end{
+  align-items: end;
+}
+
 .space-between-content{
   justify-content: space-between;
 }
