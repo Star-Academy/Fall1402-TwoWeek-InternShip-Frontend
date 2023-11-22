@@ -61,7 +61,7 @@
   border-radius: 5rem;
 }
 
-.top-header .account, .top-header .account i::before {
+.top-header .account span, .top-header .account i::before {
   color: var(--dark);
 }
 
@@ -69,6 +69,11 @@
   margin-top: 1rem;
   border-radius: 1.5rem;
   background-color: var(--dark-purple);
+}
+
+.bottom-header .burger-menu{
+  margin-right: 2rem;
+  display: none;
 }
 
 .bottom-header nav {
@@ -226,7 +231,7 @@
 /* start popular game */
 
 .popular-game{
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 .popular-game ul::-webkit-scrollbar {
@@ -304,9 +309,11 @@
   background-color: #151a2d;
   border-radius: 1.4rem;
   padding: 5rem;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 5rem;
+}
+
+.offer .text{
+  flex: 3;
 }
 
 .offer .text .fa-percent {
@@ -337,7 +344,8 @@
 }
 
 .offer .carousel {
-  max-width: 80%;
+  flex: 7;
+  width: 0;
 }
 
 .offer .carousel ul {
@@ -417,3 +425,68 @@
 }
 
 /* end footer */
+
+/* Start Media Queries */
+
+@media only screen and (max-width: 992px) {
+
+  .top-header .account span{
+    display: none;
+  }
+
+  .bottom-header{
+    position: relative;
+    padding: 1rem;
+    justify-content: space-between;
+  }
+
+  .bottom-header .burger-menu{
+    display: block;
+  }
+
+  .bottom-header nav{
+    display: none;
+  }
+
+  .bottom-header .burger-menu:hover + nav{
+    display: block;
+  }
+
+  .bottom-header nav{
+    position: absolute;
+    bottom: -8rem;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    background: var(--dark-purple);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 1.5rem;
+  }
+
+  .bottom-header nav li::before{
+    display: none !important;
+  }
+
+  .bottom-header nav li::after{
+    display: none !important;
+  }
+
+  #footer .navigate{
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .burger-menu:hover, .bottom-header nav{
+    bottom: -10rem;
+  }
+
+  #footer .navigate{
+    justify-content: center;
+  }
+}
+
+/* End Media Queries */
