@@ -31,7 +31,7 @@
   margin: auto;
 }
 
-.bottom-header{
+.bottom-header {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
@@ -47,8 +47,8 @@
 }
 
 .top-header .navigate ul .active a {
-  color: white;
-  border-top: 0.3rem solid white;
+  color: hsl(0, 0%, 100%);
+  border-top: 0.3rem solid hsl(0, 0%, 100%);
 }
 
 .top-header .cart {
@@ -56,7 +56,7 @@
 }
 
 .top-header .account {
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
   padding: 1.5rem;
   border-radius: 5rem;
 }
@@ -71,7 +71,7 @@
   background-color: var(--dark-purple);
 }
 
-.bottom-header .burger-menu{
+.bottom-header .burger-menu {
   margin-right: 2rem;
   display: none;
 }
@@ -85,7 +85,7 @@
 }
 
 .bottom-header ul li.active a, .bottom-header ul li.active a i::before {
-  color: white;
+  color: hsl(0, 0%, 100%);
 }
 
 .bottom-header ul li.active {
@@ -107,7 +107,7 @@
 .bottom-header ul li.active::after {
   content: "";
   display: inline-block;
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
   width: 15%;
   height: 0.2rem;
   position: absolute;
@@ -141,7 +141,7 @@
   width: 0.2rem;
   height: 80%;
   display: inline-block;
-  background-color: rgba(177, 177, 177, 0.5);
+  background-color: hsla(0, 0%, 69%, 0.5);
   right: -1rem;
   top: 0.4rem;
 }
@@ -165,7 +165,7 @@
 }
 
 .banner .title span {
-  background: linear-gradient(to left, white, rgba(255, 255, 255, 0.1));
+  background: linear-gradient(to left, hsl(0, 0%, 100%), hsla(0, 0%, 100%, 0.1));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 6rem;
@@ -209,19 +209,19 @@
 }
 
 .banner .items li .fa-truck-ramp-box::before {
-  background: linear-gradient(to right, #f96595, #974c75);
+  background: linear-gradient(to right, hsl(341, 92%, 69%), hsl(327, 33%, 45%));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .banner .items li .fa-comments::before {
-  background: linear-gradient(to right, #7d5dc8, #4d4670);
+  background: linear-gradient(to right, hsl(258, 49%, 57%), hsl(250, 23%, 36%));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .banner .items li .fa-star::before {
-  background: linear-gradient(to right, #fd9683, #644f54);
+  background: linear-gradient(to right, hsl(9, 97%, 75%), hsl(346, 12%, 35%));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -230,7 +230,7 @@
 
 /* start popular game */
 
-.popular-game{
+.popular-game {
   margin-top: 5rem;
 }
 
@@ -246,7 +246,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #384363;
+  background-color: hsl(225, 28%, 30%);
   border-radius: 50%;
   width: 5rem;
   height: 5rem;
@@ -306,13 +306,13 @@
 
 .offer {
   margin: 5rem 0;
-  background-color: #151a2d;
+  background-color: hsl(228, 36%, 13%);
   border-radius: 1.4rem;
   padding: 5rem;
   gap: 5rem;
 }
 
-.offer .text{
+.offer .text {
   flex: 3;
 }
 
@@ -372,12 +372,12 @@
   width: 100%;
   height: 50%;
   border-radius: 1.4rem;
-  background-color: rgba(0, 0, 0, 0.73);
+  background-color: hsla(0, 0%, 0%, 0.73);
   padding: 3rem;
 }
 
 .offer .carousel ul li .description .price p {
-  color: white;
+  color: hsl(0, 0%, 100%);
   font-size: 1.2rem;
 }
 
@@ -420,8 +420,8 @@
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  background-color: #7d51d7;
-  border: 0.01rem solid rgba(51, 51, 51, 0.43);
+  background-color: hsl(260, 63%, 58%);
+  border: 0.01rem solid hsla(0, 0%, 20%, 0.43);
 }
 
 /* end footer */
@@ -430,61 +430,61 @@
 
 @media only screen and (max-width: 992px) {
 
-  .top-header .account span{
+  .top-header .account span {
     display: none;
   }
 
-  .bottom-header{
+  .bottom-header {
     position: relative;
     padding: 1rem;
     justify-content: space-between;
   }
 
-  .bottom-header .burger-menu{
+  .bottom-header .burger-menu {
     display: block;
   }
 
-  .bottom-header nav{
+  .bottom-header nav {
     display: none;
   }
 
-  .bottom-header .burger-menu:hover + nav{
+  .bottom-header .burger-menu:hover + nav {
     display: block;
   }
 
-  .bottom-header nav{
+  .bottom-header nav {
     position: absolute;
     bottom: -8rem;
     left: 50%;
     width: 100%;
     transform: translateX(-50%);
     background: var(--dark-purple);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    box-shadow: 0 8px 32px 0 hsla(236, 63%, 33%, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid hsla(0, 0%, 100%, 0.18);
     border-radius: 1.5rem;
   }
 
-  .bottom-header nav li::before{
+  .bottom-header nav li::before {
     display: none !important;
   }
 
-  .bottom-header nav li::after{
+  .bottom-header nav li::after {
     display: none !important;
   }
 
-  #footer .navigate{
+  #footer .navigate {
     justify-content: center;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  .burger-menu:hover, .bottom-header nav{
+  .burger-menu:hover, .bottom-header nav {
     bottom: -10rem;
   }
 
-  #footer .navigate{
+  #footer .navigate {
     justify-content: center;
   }
 }

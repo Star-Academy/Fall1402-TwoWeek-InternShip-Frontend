@@ -1,10 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-  --dark: #070f1c;
-  --dark-purple: #151a2d;
-  --grey: #222e48;
-  --dark-white: #b1b1b1;
-  --gradient: linear-gradient(to right, #8854ff, #6268fc, #ed68c3);
+  --dark: hsl(217, 60%, 7%);
+  --dark-purple: hsl(228, 36%, 13%);
+  --grey: hsl(221, 36%, 21%);
+  --dark-white: hsl(0, 0%, 69%);
+  --gradient: linear-gradient(to right, hsl(258, 100%, 66%), hsl(238, 96%, 69%), hsl(319, 79%, 67%));
 }
 
 @font-face {
@@ -27,7 +27,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #d0368a 0%, #708ad4 99%);
+  background: linear-gradient(180deg, hsl(327, 62%, 51%) 0%, hsl(224, 54%, 64%) 99%);
   border-radius: 7rem;
 }
 
@@ -36,14 +36,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white;
+  color: hsl(0, 0%, 100%);
 }
 
-*{
+* {
   font-family: "Vazir", serif;
 }
 
-html{
+html {
   font-size: 62.5%;
 }
 
@@ -64,7 +64,7 @@ button, input {
   border: none;
 }
 
-input:focus-visible{
+input:focus-visible {
   outline: none;
 }
 
@@ -86,11 +86,11 @@ app-root {
   align-items: center;
 }
 
-.align-end{
+.align-end {
   align-items: end;
 }
 
-.space-between-content{
+.space-between-content {
   justify-content: space-between;
 }
 
@@ -102,11 +102,11 @@ app-root {
   background-color: var(--grey);
 }
 
-.gradient-background{
+.gradient-background {
   background: var(--gradient);
 }
 
-.full-width{
+.full-width {
   width: 100%;
 }
 
