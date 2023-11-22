@@ -138,14 +138,12 @@
 
 .banner {
   margin-top: 3rem;
-}
-
-.banner > * {
-  flex: 1;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .banner img {
-  width: 0;
+  width: 50rem;
 }
 
 .banner .title {
