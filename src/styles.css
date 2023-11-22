@@ -15,22 +15,6 @@
   font-weight: normal;
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, hsl(327, 62%, 51%) 0%, hsl(224, 54%, 64%) 99%);
-  border-radius: 7rem;
-}
-
 *, *::before, *::after {
   direction: rtl;
   margin: 0;
