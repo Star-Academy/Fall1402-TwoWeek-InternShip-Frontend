@@ -3,10 +3,6 @@
   width: min(1140px, 90%);
 }
 
-/**::-webkit-scrollbar {
-  display: none
-}*/
-
 /* start header */
 
 #header {
