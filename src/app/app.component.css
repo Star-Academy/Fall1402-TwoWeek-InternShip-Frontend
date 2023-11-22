@@ -216,6 +216,10 @@
 
 /* start popular game */
 
+.popular-game{
+  margin-top: 2rem;
+}
+
 .popular-game ul::-webkit-scrollbar {
   height: 0;
 }
@@ -384,6 +388,8 @@
   font-size: 1.2rem;
   padding: 1rem 2rem;
   border-radius: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 #footer .navigate ul {
