@@ -15,6 +15,9 @@
 
 .top-header {
   margin-top: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .top-header .logo, #footer .logo {
@@ -26,6 +29,12 @@
 
 .top-header .navigate {
   margin: auto;
+}
+
+.bottom-header{
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .top-header .navigate ul li a, .bottom-header ul li a {
