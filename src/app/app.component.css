@@ -218,6 +218,10 @@
 
 /* start popular game */
 
+.popular-game ul::-webkit-scrollbar {
+  height: 0;
+}
+
 .popular-game, .offer .carousel {
   position: relative;
 }
@@ -328,6 +332,10 @@
 
 .offer .carousel ul {
   max-width: 73rem;
+}
+
+.offer .carousel ul::-webkit-scrollbar {
+  height: 0;
 }
 
 .offer .carousel ul li {
