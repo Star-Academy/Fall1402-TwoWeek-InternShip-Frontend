@@ -293,10 +293,9 @@
   background-color: #151a2d;
   border-radius: 1.4rem;
   padding: 5rem;
-}
-
-.offer .text {
-  flex: 3;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
 }
 
 .offer .text .fa-percent {
@@ -327,11 +326,11 @@
 }
 
 .offer .carousel {
-  flex: 7;
+  max-width: 80%;
 }
 
 .offer .carousel ul {
-  max-width: 73rem;
+
 }
 
 .offer .carousel ul::-webkit-scrollbar {
