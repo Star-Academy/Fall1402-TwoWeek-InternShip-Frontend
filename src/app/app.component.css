@@ -83,18 +83,6 @@ main{
   position: relative;
 }
 
-.lower-part ul li.active::before {
-  content: "";
-  display: inline-block;
-  background-color: var(--dark);
-  inline-size: 42%;
-  block-size: 1.5rem;
-  position: absolute;
-  inset-block-end: -0.6rem;
-  inset-inline-end: 4.5rem;
-  border-radius: 1rem 1rem 0;
-}
-
 .lower-part ul li.active::after {
   content: "";
   display: inline-block;
@@ -449,10 +437,6 @@ main{
     -webkit-backdrop-filter: blur(4px);
     border: 1px solid hsla(0, 0%, 100%, 0.18);
     border-radius: 1.5rem;
-  }
-
-  .lower-part nav li::before {
-    display: none !important;
   }
 
   .lower-part nav li::after {
