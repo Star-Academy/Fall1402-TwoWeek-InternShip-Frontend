@@ -15,51 +15,51 @@ main{
   padding-block-start: 0.5rem;
 }
 
-.top-header {
+.upper-part {
   flex-wrap: wrap;
   gap: 1rem;
 }
 
-.top-header .brand{
+.upper-part .brand{
   gap: 1rem;
 }
 
-.top-header .logo, #footer .logo {
+.upper-part .logo, #footer .logo {
   padding: 0.5rem;
   border-radius: 1rem;
   block-size: 5.5rem;
 }
 
-.top-header .navigate ul li a, .bottom-header ul li a {
+.upper-part .navigate ul li a, .lower-part ul li a {
   display: block;
   padding: 2rem 1.5rem;
 }
 
-.top-header .navigate ul li a, .bottom-header ul li a, .bottom-header ul li i::before {
+.upper-part .navigate ul li a, .lower-part ul li a, .lower-part ul li i::before {
   color: var(--dark-white);
 }
 
-.top-header .navigate ul .active a {
+.upper-part .navigate ul .active a {
   color: hsl(0, 0%, 100%);
   border-top: 0.3rem solid hsl(0, 0%, 100%);
 }
 
-.top-header .cart {
+.upper-part .cart {
   padding: 2rem;
 }
 
-.top-header .account {
+.upper-part .account {
   background-color: hsl(0, 0%, 100%);
   padding: 1.5rem;
   border-radius: 5rem;
   gap: 1rem;
 }
 
-.top-header .account span, .top-header .account i::before {
+.upper-part .account span, .upper-part .account i::before {
   color: var(--dark);
 }
 
-.bottom-header {
+.lower-part {
   border-radius: 1.5rem;
   background-color: var(--dark-purple);
   flex-wrap: wrap;
@@ -67,23 +67,23 @@ main{
   padding-inline-end: 1.2rem;
 }
 
-.bottom-header .burger-menu {
+.lower-part .burger-menu {
   display: none;
 }
 
-.bottom-header ul li a i {
+.lower-part ul li a i {
   font-size: 1rem;
 }
 
-.bottom-header ul li.active a, .bottom-header ul li.active a i::before {
+.lower-part ul li.active a, .lower-part ul li.active a i::before {
   color: hsl(0, 0%, 100%);
 }
 
-.bottom-header ul li.active {
+.lower-part ul li.active {
   position: relative;
 }
 
-.bottom-header ul li.active::before {
+.lower-part ul li.active::before {
   content: "";
   display: inline-block;
   background-color: var(--dark);
@@ -95,7 +95,7 @@ main{
   border-radius: 1rem 1rem 0;
 }
 
-.bottom-header ul li.active::after {
+.lower-part ul li.active::after {
   content: "";
   display: inline-block;
   background-color: hsl(0, 0%, 100%);
@@ -107,25 +107,25 @@ main{
   border-radius: 1rem;
 }
 
-.bottom-header .search {
+.lower-part .search {
   border-radius: 0.7rem;
   padding: 0.6rem;
 }
 
-.bottom-header .search > * {
+.lower-part .search > * {
   padding: 0.6rem;
 }
 
-.bottom-header .search .filter {
+.lower-part .search .filter {
   position: relative;
   border-radius: 0.4rem;
 }
 
-.bottom-header .search .filter i {
+.lower-part .search .filter i {
   vertical-align: -0.2rem;
 }
 
-.bottom-header .search .filter::before {
+.lower-part .search .filter::before {
   content: "";
   position: absolute;
   inline-size: 0.2rem;
@@ -413,11 +413,11 @@ main{
 
 @media only screen and (max-width: 992px) {
 
-  .top-header .account span {
+  .upper-part .account span {
     display: none;
   }
 
-  .bottom-header {
+  .lower-part {
     position: relative;
     padding-block-start: 1rem;
     padding-block-end: 1rem;
@@ -425,19 +425,19 @@ main{
     padding-inline-end: 1rem;
   }
 
-  .bottom-header .burger-menu {
+  .lower-part .burger-menu {
     display: block;
   }
 
-  .bottom-header nav {
+  .lower-part nav {
     display: none;
   }
 
-  .bottom-header .burger-menu:hover + nav {
+  .lower-part .burger-menu:hover + nav {
     display: block;
   }
 
-  .bottom-header nav {
+  .lower-part nav {
     position: absolute;
     inset-block-end: -8rem;
     inset-inline-start: 50%;
@@ -451,11 +451,11 @@ main{
     border-radius: 1.5rem;
   }
 
-  .bottom-header nav li::before {
+  .lower-part nav li::before {
     display: none !important;
   }
 
-  .bottom-header nav li::after {
+  .lower-part nav li::after {
     display: none !important;
   }
 
@@ -465,7 +465,7 @@ main{
 }
 
 @media only screen and (max-width: 576px) {
-  .burger-menu:hover, .bottom-header nav {
+  .burger-menu:hover, .lower-part nav {
     inset-block-end: -10rem;
   }
 
