@@ -1,9 +1,9 @@
 /* general css */
-#header, #main {
+#header, #main, #footer {
   inline-size: min(1140px, 90%);
 }
 
-main{
+#main{
   gap:5rem;
 }
 
@@ -356,7 +356,7 @@ main{
 
 /* start footer */
 
-#footer {
+footer {
   background-color: var(--dark-purple);
   padding: 2rem;
 }
