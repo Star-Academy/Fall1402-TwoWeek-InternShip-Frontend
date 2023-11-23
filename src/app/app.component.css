@@ -110,7 +110,7 @@
 }
 
 .lower-part .search .filter i {
-  vertical-align: -0.2rem;
+  padding-block-start: 1rem;
 }
 
 .lower-part .search .filter::before {
@@ -161,8 +161,8 @@
   gap: 0.3rem;
 }
 
-.banner a i {
-  vertical-align: -0.3rem;
+.banner a {
+  gap: 0.5rem;
 }
 
 .banner .items ul {
@@ -309,9 +309,8 @@
   font-size: 1.4rem;
 }
 
-.offer .text a i {
-  vertical-align: -0.2rem;
-  padding-inline-end: 0.8rem;
+.offer .text a {
+  gap: 0.5rem;
 }
 
 .offer .carousel {
