@@ -288,12 +288,10 @@
 }
 
 .popular-game ul li a {
-  margin-top: 1rem;
-}
-
-.popular-game ul li a i {
-  vertical-align: -0.2rem;
-  margin-right: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
 }
 
 /* end popular game */
