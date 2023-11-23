@@ -1,36 +1,33 @@
 /* general css */
 #header, #main {
-  width: min(1140px, 90%);
+  inline-size: min(1140px, 90%);
+}
+
+main{
+  gap:5rem;
 }
 
 /* start header */
 
 #header {
   font-size: 1.2rem;
+  gap: 1rem;
+  padding-block-start: 0.5rem;
 }
 
 .top-header {
-  margin-top: 0.5rem;
   flex-wrap: wrap;
-  justify-content: center;
+  gap: 1rem;
+}
+
+.top-header .brand{
   gap: 1rem;
 }
 
 .top-header .logo, #footer .logo {
   padding: 0.5rem;
   border-radius: 1rem;
-  height: 5.5rem;
-  margin-left: 1rem;
-}
-
-.top-header .navigate {
-  margin: auto;
-}
-
-.bottom-header {
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
+  block-size: 5.5rem;
 }
 
 .top-header .navigate ul li a, .bottom-header ul li a {
@@ -55,6 +52,7 @@
   background-color: hsl(0, 0%, 100%);
   padding: 1.5rem;
   border-radius: 5rem;
+  gap: 1rem;
 }
 
 .top-header .account span, .top-header .account i::before {
@@ -62,18 +60,15 @@
 }
 
 .bottom-header {
-  margin-top: 1rem;
   border-radius: 1.5rem;
   background-color: var(--dark-purple);
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-inline-end: 1.2rem;
 }
 
 .bottom-header .burger-menu {
-  margin-right: 2rem;
   display: none;
-}
-
-.bottom-header nav {
-  margin-left: auto;
 }
 
 .bottom-header ul li a i {
@@ -92,11 +87,11 @@
   content: "";
   display: inline-block;
   background-color: var(--dark);
-  width: 42%;
-  height: 1.5rem;
+  inline-size: 42%;
+  block-size: 1.5rem;
   position: absolute;
-  bottom: -0.6rem;
-  right: 4.5rem;
+  inset-block-end: -0.6rem;
+  inset-inline-end: 4.5rem;
   border-radius: 1rem 1rem 0;
 }
 
@@ -104,21 +99,20 @@
   content: "";
   display: inline-block;
   background-color: hsl(0, 0%, 100%);
-  width: 15%;
-  height: 0.2rem;
+  inline-size: 15%;
+  block-size: 0.2rem;
   position: absolute;
-  bottom: -0.1rem;
-  right: 6.5rem;
+  inset-block-end: -0.1rem;
+  inset-inline-end: 6.5rem;
   border-radius: 1rem;
 }
 
 .bottom-header .search {
-  margin-left: 1.2rem;
   border-radius: 0.7rem;
+  padding: 0.6rem;
 }
 
 .bottom-header .search > * {
-  margin: 0.6rem;
   padding: 0.6rem;
 }
 
@@ -134,12 +128,12 @@
 .bottom-header .search .filter::before {
   content: "";
   position: absolute;
-  width: 0.2rem;
-  height: 80%;
+  inline-size: 0.2rem;
+  block-size: 80%;
   display: inline-block;
   background-color: hsla(0, 0%, 69%, 0.5);
-  right: -1rem;
-  top: 0.4rem;
+  inset-inline-end: 3rem;
+  inset-block-start: 0.4rem;
 }
 
 /* end header */
@@ -147,13 +141,12 @@
 /* start banner */
 
 .banner {
-  margin-top: 3rem;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .banner img {
-  width: 50rem;
+  inline-size: 50rem;
 }
 
 .banner .title {
@@ -168,30 +161,30 @@
 }
 
 .banner .title p {
-  margin: 1.2rem 0;
   font-size: 1.2rem;
   color: var(--dark-white);
+  padding-block-end: 1.2rem;
 }
 
 .banner a {
   padding: 1rem 2rem;
-  margin: 1.2rem 0 2.5rem 1.2rem;
   font-size: 1.4rem;
   border-radius: 5rem;
+  gap: 0.3rem;
 }
 
 .banner a i {
-  margin-right: 0.3rem;
   vertical-align: -0.3rem;
 }
 
 .banner .items ul {
+  padding-block-start: 1.2rem;
   gap: 2rem;
 }
 
 .banner .items ul li i {
   font-size: 2.5rem;
-  margin-bottom: 1.2rem;
+  padding-block-end: 1.2rem;
 }
 
 .banner .items p:first-child {
@@ -199,7 +192,7 @@
 }
 
 .banner .items p:last-child {
-  margin-top: 0.8rem;
+  padding-block-start: 0.8rem;
   font-size: 1.2rem;
   color: var(--dark-white);
 }
@@ -226,12 +219,8 @@
 
 /* start popular game */
 
-.popular-game {
-  margin-top: 5rem;
-}
-
 .popular-game ul::-webkit-scrollbar {
-  height: 0;
+  block-size: 0;
 }
 
 .popular-game, .offer .carousel {
@@ -240,24 +229,24 @@
 
 .popular-game button, .offer .carousel :is(button.right, button.left) {
   position: absolute;
-  top: 50%;
+  inset-block-start: 50%;
   transform: translateY(-50%);
   background-color: hsl(225, 28%, 30%);
   border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
+  inline-size: 5rem;
+  block-size: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .popular-game button.right, .offer .carousel button.right {
-  right: -2.5rem;
+  inset-inline-end: -2.5rem;
   z-index: 1;
 }
 
 .popular-game button.left, .offer .carousel button.left {
-  left: -2.5rem;
+  inset-inline-start: -2.5rem;
 }
 
 .popular-game ul, .offer .carousel ul {
@@ -268,23 +257,24 @@
 .popular-game ul li {
   background-color: var(--dark-purple);
   border-radius: 1.4rem;
-  min-width: 21rem;
+  min-inline-size: 21rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem 0 1rem 0;
+  padding-block-start: 3rem;
+  padding-block-end: 1rem;
 }
 
 .popular-game ul li img {
-  width: 50%;
+  inline-size: 50%;
   border-radius: 50%;
-  margin-bottom: 1rem;
+  padding-block-end: 1rem;
 }
 
 .popular-game ul li p, .offer .carousel ul li .description p, .offer .carousel ul li .description del {
   color: var(--dark-white);
-  margin-top: 0.2rem;
+  padding-block-start: 0.2rem;
 }
 
 .popular-game ul li a {
@@ -299,7 +289,6 @@
 /* start offer */
 
 .offer {
-  margin: 5rem 0;
   background-color: hsl(228, 36%, 13%);
   border-radius: 1.4rem;
   padding: 5rem;
@@ -315,13 +304,13 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 6rem;
-  margin-bottom: 2rem;
+  padding-block-end: 2rem;
 }
 
 .offer .text h3 {
   font-size: 3rem;
   font-weight: lighter;
-  margin-bottom: 2rem;
+  padding-block-end: 2rem;
 }
 
 .offer .text h3 span {
@@ -334,12 +323,12 @@
 
 .offer .text a i {
   vertical-align: -0.2rem;
-  padding-right: 0.8rem;
+  padding-inline-end: 0.8rem;
 }
 
 .offer .carousel {
   flex: 7;
-  width: 0;
+  inline-size: 0;
 }
 
 .offer .carousel ul {
@@ -347,24 +336,24 @@
 }
 
 .offer .carousel ul::-webkit-scrollbar {
-  height: 0;
+  block-size: 0;
 }
 
 .offer .carousel ul li {
-  min-width: 23rem;
+  min-inline-size: 23rem;
   position: relative;
 }
 
 .offer .carousel ul li img {
-  width: 100%;
+  inline-size: 100%;
   border-radius: 1.4rem;
 }
 
 .offer .carousel ul li .description {
   position: absolute;
-  bottom: 0.5rem;
-  width: 100%;
-  height: 50%;
+  inset-block-end: 0.5rem;
+  inline-size: 100%;
+  block-size: 50%;
   border-radius: 1.4rem;
   background-color: hsla(0, 0%, 0%, 0.73);
   padding: 3rem;
@@ -386,13 +375,13 @@
 
 #footer .title {
   font-size: 2.4rem;
-  margin-top: 2rem;
+  padding-block-start: 2rem;
 }
 
 #footer p {
   font-size: 1.2rem;
   color: var(--dark-white);
-  margin-bottom: 2rem;
+  padding-block-end: 2rem;
 }
 
 #footer .navigate {
@@ -411,8 +400,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 3rem;
-  height: 3rem;
+  inline-size: 3rem;
+  block-size: 3rem;
   border-radius: 50%;
   background-color: hsl(260, 63%, 58%);
   border: 0.01rem solid hsla(0, 0%, 20%, 0.43);
@@ -430,8 +419,10 @@
 
   .bottom-header {
     position: relative;
-    padding: 1rem;
-    justify-content: space-between;
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+    padding-inline-start: 2rem;
+    padding-inline-end: 1rem;
   }
 
   .bottom-header .burger-menu {
@@ -448,9 +439,9 @@
 
   .bottom-header nav {
     position: absolute;
-    bottom: -8rem;
-    left: 50%;
-    width: 100%;
+    inset-block-end: -8rem;
+    inset-inline-start: 50%;
+    inline-size: 100%;
     transform: translateX(-50%);
     background: var(--dark-purple);
     box-shadow: 0 8px 32px 0 hsla(236, 63%, 33%, 0.37);
@@ -475,7 +466,7 @@
 
 @media only screen and (max-width: 576px) {
   .burger-menu:hover, .bottom-header nav {
-    bottom: -10rem;
+    inset-block-end: -10rem;
   }
 
   #footer .navigate {

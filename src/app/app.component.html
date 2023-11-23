@@ -1,8 +1,10 @@
-<header class="flex column align-center" id="header">
-  <div class="flex align-center full-width top-header">
-    <img src="./assets/images/icon.webp" alt="game store logo" class="logo grey-background">
+<header class="flex column" id="header">
+  <div class="flex align-center full-width top-header space-between-content">
+    <div class="flex align-center brand">
+      <img src="./assets/images/icon.webp" alt="game store logo" class="logo grey-background">
 
-    <h1>فروشگاه بازی</h1>
+      <h1>فروشگاه بازی</h1>
+    </div>
 
     <nav class="navigate">
       <ul class="flex">
@@ -24,17 +26,19 @@
       </ul>
     </nav>
 
-    <a href="#" class="cart">
-      <i class="fa-solid fa-cart-shopping"></i>
-    </a>
+    <div class="flex align-center">
+      <a href="#" class="cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </a>
 
-    <a href="#" class="account">
-      <i class="fa-solid fa-user"></i>
-      <span>ورود به حساب</span>
-    </a>
+      <a href="#" class="flex align-center account">
+        <i class="fa-solid fa-user"></i>
+        <span>ورود به حساب</span>
+      </a>
+    </div>
   </div>
 
-  <div class="flex align-center full-width bottom-header">
+  <div class="flex align-center full-width bottom-header space-between-content">
     <div class="burger-menu"><i class="fa-solid fa-bars fa-2xl"></i></div>
     <nav>
       <ul class="flex">
@@ -89,7 +93,7 @@
   </div>
 </header>
 
-<main id="main">
+<main id="main" class="flex column">
   <section class="flex align-center banner">
     <img src="./assets/images/banner.webp" alt="site banner">
     <div class="flex align-center column">
@@ -141,7 +145,7 @@
 
   <section class="popular-game">
     <button class="right">
-      <i class="fa-solid fa-arrow-right"></i>
+      <i class="fa-solid fa-arrow-left"></i>
     </button>
 
     <ul class="flex">
@@ -207,7 +211,7 @@
     </ul>
 
     <button class="left">
-      <i class="fa-solid fa-arrow-left"></i>
+      <i class="fa-solid fa-arrow-right"></i>
     </button>
   </section>
 
@@ -226,7 +230,7 @@
 
     <div class="carousel">
       <button class="right">
-        <i class="fa-solid fa-arrow-right"></i>
+        <i class="fa-solid fa-arrow-left"></i>
       </button>
 
       <ul class="flex">
@@ -322,7 +326,7 @@
       </ul>
 
       <button class="left">
-        <i class="fa-solid fa-arrow-left"></i>
+        <i class="fa-solid fa-arrow-right"></i>
       </button>
     </div>
   </section>
