@@ -1,0 +1,460 @@
+/* general css */
+#header, #main, #footer {
+  inline-size: min(1140px, 90%);
+}
+
+#main{
+  gap:5rem;
+}
+
+/* start header */
+
+#header {
+  font-size: 1.2rem;
+  gap: 1rem;
+  padding-block-start: 0.5rem;
+}
+
+.upper-part {
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.upper-part .brand{
+  gap: 1rem;
+}
+
+.upper-part .logo, #footer .logo {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  block-size: 5.5rem;
+}
+
+.upper-part .navigate ul li a, .lower-part ul li a {
+  display: block;
+  padding: 2rem 1.5rem;
+}
+
+.upper-part .navigate ul li a, .lower-part ul li a, .lower-part ul li i::before {
+  color: var(--dark-white);
+}
+
+.upper-part .navigate ul .active a {
+  color: hsl(0, 0%, 100%);
+  border-top: 0.3rem solid hsl(0, 0%, 100%);
+}
+
+.upper-part .cart {
+  padding: 2rem;
+}
+
+.upper-part .account {
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.5rem;
+  border-radius: 5rem;
+  gap: 1rem;
+}
+
+.upper-part .account span, .upper-part .account i::before {
+  color: var(--dark);
+}
+
+.lower-part {
+  border-radius: 1.5rem;
+  background-color: var(--dark-purple);
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-inline-end: 1.2rem;
+}
+
+.lower-part .burger-menu {
+  display: none;
+}
+
+.lower-part ul li a i {
+  font-size: 1rem;
+}
+
+.lower-part ul li.active a, .lower-part ul li.active a i::before {
+  color: hsl(0, 0%, 100%);
+}
+
+.lower-part ul li.active {
+  position: relative;
+}
+
+.lower-part ul li.active::after {
+  content: "";
+  display: inline-block;
+  background-color: hsl(0, 0%, 100%);
+  inline-size: 15%;
+  block-size: 0.2rem;
+  position: absolute;
+  inset-block-end: -0.1rem;
+  inset-inline-end: 6.5rem;
+  border-radius: 1rem;
+}
+
+.lower-part .search {
+  border-radius: 0.7rem;
+  padding: 0.6rem;
+}
+
+.lower-part .search > * {
+  padding: 0.6rem;
+}
+
+.lower-part .search .filter {
+  position: relative;
+  border-radius: 0.4rem;
+}
+
+.lower-part .search .filter i {
+  padding-block-start: 1rem;
+}
+
+.lower-part .search .filter::before {
+  content: "";
+  position: absolute;
+  inline-size: 0.2rem;
+  block-size: 80%;
+  display: inline-block;
+  background-color: hsla(0, 0%, 69%, 0.5);
+  inset-inline-end: 3rem;
+  inset-block-start: 0.4rem;
+}
+
+/* end header */
+
+/* start banner */
+
+.banner {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.banner img {
+  inline-size: 50rem;
+}
+
+.banner .title {
+  font-size: 3rem;
+}
+
+.banner .title span {
+  background: linear-gradient(to left, hsl(0, 0%, 100%), hsla(0, 0%, 100%, 0.1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 6rem;
+}
+
+.banner .title p {
+  font-size: 1.2rem;
+  color: var(--dark-white);
+  padding-block-end: 1.2rem;
+}
+
+.banner a {
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  border-radius: 5rem;
+  gap: 0.3rem;
+}
+
+.banner a {
+  gap: 0.5rem;
+}
+
+.banner .items ul {
+  padding-block-start: 1.2rem;
+  gap: 2rem;
+}
+
+.banner .items ul li i {
+  font-size: 2.5rem;
+  padding-block-end: 1.2rem;
+}
+
+.banner .items p:first-child {
+  font-size: 1.6rem;
+}
+
+.banner .items p:last-child {
+  padding-block-start: 0.8rem;
+  font-size: 1.2rem;
+  color: var(--dark-white);
+}
+
+.banner .items li .fa-truck-ramp-box::before {
+  background: linear-gradient(to right, hsl(341, 92%, 69%), hsl(327, 33%, 45%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner .items li .fa-comments::before {
+  background: linear-gradient(to right, hsl(258, 49%, 57%), hsl(250, 23%, 36%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner .items li .fa-star::before {
+  background: linear-gradient(to right, hsl(9, 97%, 75%), hsl(346, 12%, 35%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* end banner */
+
+/* start popular game */
+
+.popular-game ul::-webkit-scrollbar {
+  block-size: 0;
+}
+
+.popular-game, .offer .carousel {
+  position: relative;
+}
+
+.popular-game button, .offer .carousel :is(button.right, button.left) {
+  position: absolute;
+  inset-block-start: 50%;
+  transform: translateY(-50%);
+  background-color: hsl(225, 28%, 30%);
+  border-radius: 50%;
+  inline-size: 5rem;
+  block-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popular-game button.right, .offer .carousel button.right {
+  inset-inline-end: -2.5rem;
+  z-index: 1;
+}
+
+.popular-game button.left, .offer .carousel button.left {
+  inset-inline-start: -2.5rem;
+}
+
+.popular-game ul, .offer .carousel ul {
+  overflow-x: auto;
+  gap: 2rem;
+}
+
+.popular-game ul li {
+  background-color: var(--dark-purple);
+  border-radius: 1.4rem;
+  min-inline-size: 21rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block-start: 3rem;
+  padding-block-end: 1rem;
+}
+
+.popular-game ul li img {
+  inline-size: 50%;
+  border-radius: 50%;
+  padding-block-end: 1rem;
+}
+
+.popular-game ul li p, .offer .carousel ul li .description p, .offer .carousel ul li .description del {
+  color: var(--dark-white);
+  padding-block-start: 0.2rem;
+}
+
+.popular-game ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+/* end popular game */
+
+/* start offer */
+
+.offer {
+  background-color: hsl(228, 36%, 13%);
+  border-radius: 1.4rem;
+  padding: 5rem;
+  gap: 5rem;
+}
+
+.offer .text {
+  flex: 3;
+}
+
+.offer .text .fa-percent {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 6rem;
+  padding-block-end: 2rem;
+}
+
+.offer .text h3 {
+  font-size: 3rem;
+  font-weight: lighter;
+  padding-block-end: 2rem;
+}
+
+.offer .text h3 span {
+  font-weight: bold;
+}
+
+.offer .text a {
+  font-size: 1.4rem;
+}
+
+.offer .text a {
+  gap: 0.5rem;
+}
+
+.offer .carousel {
+  flex: 7;
+  inline-size: 0;
+}
+
+.offer .carousel ul {
+
+}
+
+.offer .carousel ul::-webkit-scrollbar {
+  block-size: 0;
+}
+
+.offer .carousel ul li {
+  min-inline-size: 23rem;
+  position: relative;
+}
+
+.offer .carousel ul li img {
+  inline-size: 100%;
+  border-radius: 1.4rem;
+}
+
+.offer .carousel ul li .description {
+  position: absolute;
+  inset-block-end: 0.5rem;
+  inline-size: 100%;
+  block-size: 50%;
+  border-radius: 1.4rem;
+  background-color: hsla(0, 0%, 0%, 0.73);
+  padding: 3rem;
+}
+
+.offer .carousel ul li .description .price p {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.2rem;
+}
+
+/* end offer */
+
+/* start footer */
+
+footer {
+  background-color: var(--dark-purple);
+  padding: 2rem;
+}
+
+#footer .title {
+  font-size: 2.4rem;
+  padding-block-start: 2rem;
+}
+
+#footer p {
+  font-size: 1.2rem;
+  color: var(--dark-white);
+  padding-block-end: 2rem;
+}
+
+#footer .navigate {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#footer .navigate ul {
+  gap: 2rem;
+}
+
+#footer .navigate .social-media li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: 3rem;
+  block-size: 3rem;
+  border-radius: 50%;
+  background-color: hsl(260, 63%, 58%);
+  border: 0.01rem solid hsla(0, 0%, 20%, 0.43);
+}
+
+/* end footer */
+
+/* Start Media Queries */
+
+@media only screen and (max-width: 992px) {
+
+  .upper-part .account span {
+    display: none;
+  }
+
+  .lower-part {
+    position: relative;
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+    padding-inline-start: 2rem;
+    padding-inline-end: 1rem;
+  }
+
+  .lower-part .burger-menu {
+    display: block;
+  }
+
+  .lower-part nav {
+    display: none;
+  }
+
+  .lower-part .burger-menu:hover + nav {
+    display: block;
+  }
+
+  .lower-part nav {
+    position: absolute;
+    inset-block-end: -8rem;
+    inset-inline-start: 50%;
+    inline-size: 100%;
+    transform: translateX(-50%);
+    background: var(--dark-purple);
+    box-shadow: 0 8px 32px 0 hsla(236, 63%, 33%, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid hsla(0, 0%, 100%, 0.18);
+    border-radius: 1.5rem;
+  }
+
+  .lower-part nav li::after {
+    display: none !important;
+  }
+
+  #footer .navigate {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .burger-menu:hover, .lower-part nav {
+    inset-block-end: -10rem;
+  }
+
+  #footer .navigate {
+    justify-content: center;
+  }
+}
+
+/* End Media Queries */
