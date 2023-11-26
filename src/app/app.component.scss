@@ -425,11 +425,10 @@ footer {
   }
 
   .lower-part nav {
+    writing-mode: horizontal-tb;
     position: absolute;
     inset-block-end: -8rem;
-    inset-inline-start: 50%;
-    inline-size: 100%;
-    transform: translateX(-50%);
+    inset-inline: 0;
     background: var(--dark-purple);
     box-shadow: 0 8px 32px 0 hsla(236, 63%, 33%, 0.37);
     backdrop-filter: blur(4px);
