@@ -1,0 +1,50 @@
+.upper-part {
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.upper-part .brand{
+  gap: 1rem;
+}
+
+.upper-part .logo{
+  padding: 0.5rem;
+  border-radius: 1rem;
+  block-size: 5.5rem;
+}
+
+.upper-part .navigate ul li a{
+  display: block;
+  padding: 2rem 1.5rem;
+}
+
+.upper-part .navigate ul li a {
+  color: var(--dark-white);
+}
+
+.upper-part .navigate ul .active a {
+  color: hsl(0, 0%, 100%);
+  border-top: 0.3rem solid hsl(0, 0%, 100%);
+}
+
+.upper-part .cart {
+  padding: 2rem;
+}
+
+.upper-part .account {
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.5rem;
+  border-radius: 5rem;
+  gap: 1rem;
+}
+
+.upper-part .account span, .upper-part .account i::before {
+  color: var(--dark);
+}
+
+@media only screen and (max-width: 992px) {
+
+  .upper-part .account span {
+    display: none;
+  }
+}
