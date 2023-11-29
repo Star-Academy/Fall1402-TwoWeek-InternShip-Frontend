@@ -1,0 +1,49 @@
+<section class="flex align-center offer">
+  <div class="text">
+    <i class="fa-solid fa-percent"></i>
+
+    <h3>
+      تخفیفات
+      <br>
+      <span>شگفت انگیز</span>
+    </h3>
+
+    <a class="flex align-center" href="#">مشاهده همه<i class="fa-solid fa-arrow-left"></i></a>
+  </div>
+
+  <div class="carousel">
+    <button class="right">
+      <i class="fa-solid fa-arrow-left"></i>
+    </button>
+
+    <ul class="flex">
+      <li *ngFor="let item of items">
+        <div>
+          <img src={{item.image}} alt="call of duty banner">
+
+          <div class="flex column align-center space-between-content description">
+            <div class="flex column align-center">
+              <h3>{{item.title}}</h3>
+              <p>{{item.description}}</p>
+            </div>
+
+            <div class="flex space-between-content full-width">
+              <button>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+
+              <div class="flex column price align-end">
+                <del>{{item.oldPrice}}</del>
+                <p>{{item.price}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <button class="left">
+      <i class="fa-solid fa-arrow-right"></i>
+    </button>
+  </div>
+</section>

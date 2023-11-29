@@ -4,6 +4,7 @@ import {HeaderModule} from "../header/header.module";
 import {LandingComponent} from "../../pages/landing/landing.component";
 import {BannerModule} from "../banner/banner.module";
 import {PopularGameModule} from "../popular-game/popular-game.module";
+import {OfferGameModule} from "../offer-game/offer-game.module";
 
 
 
@@ -13,7 +14,8 @@ import {PopularGameModule} from "../popular-game/popular-game.module";
     CommonModule,
     HeaderModule,
     BannerModule,
-    PopularGameModule
+    PopularGameModule,
+    OfferGameModule,
   ],
 })
 export class LandingModule { }

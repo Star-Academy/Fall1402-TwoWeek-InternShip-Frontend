@@ -1,0 +1,101 @@
+.offer {
+  background-color: hsl(228, 36%, 13%);
+  border-radius: 1.4rem;
+  padding: 5rem;
+  gap: 5rem;
+}
+
+.offer .text {
+  flex: 3;
+}
+
+.offer .text .fa-percent {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 6rem;
+  padding-block-end: 2rem;
+}
+
+.offer .text h3 {
+  font-size: 3rem;
+  font-weight: lighter;
+  padding-block-end: 2rem;
+}
+
+.offer .text h3 span {
+  font-weight: bold;
+}
+
+.offer .text a {
+  font-size: 1.4rem;
+}
+
+.offer .text a {
+  gap: 0.5rem;
+}
+
+.offer .carousel {
+  flex: 7;
+  inline-size: 0;
+}
+
+.offer .carousel ul::-webkit-scrollbar {
+  block-size: 0;
+}
+
+.offer .carousel ul li {
+  min-inline-size: 23rem;
+  position: relative;
+}
+
+.offer .carousel ul li img {
+  inline-size: 100%;
+  border-radius: 1.4rem;
+}
+
+.offer .carousel ul li .description {
+  position: absolute;
+  inset-block-end: 0.5rem;
+  inline-size: 100%;
+  block-size: 50%;
+  border-radius: 1.4rem;
+  background-color: hsla(0, 0%, 0%, 0.73);
+  padding: 3rem;
+}
+
+.offer .carousel ul li .description .price p {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.2rem;
+}
+
+.offer .carousel {
+  position: relative;
+}
+
+.offer .carousel :is(button.right, button.left) {
+  position: absolute;
+  inset-block-start: 50%;
+  transform: translateY(-50%);
+  background-color: hsl(225, 28%, 30%);
+  border-radius: 50%;
+  inline-size: 5rem;
+  block-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer .carousel button.right {
+  inset-inline-end: -2.5rem;
+  z-index: 1;
+}
+
+.offer .carousel button.left {
+  inset-inline-start: -2.5rem;
+}
+
+.offer .carousel ul {
+  overflow-x: auto;
+  gap: 2rem;
+}
