@@ -5,6 +5,7 @@ import {LandingComponent} from "../../pages/landing/landing.component";
 import {BannerModule} from "../banner/banner.module";
 import {PopularGameModule} from "../popular-game/popular-game.module";
 import {OfferGameModule} from "../offer-game/offer-game.module";
+import {FooterModule} from "../footer/footer.module";
 
 
 
@@ -16,6 +17,7 @@ import {OfferGameModule} from "../offer-game/offer-game.module";
     BannerModule,
     PopularGameModule,
     OfferGameModule,
+    FooterModule
   ],
 })
 export class LandingModule { }

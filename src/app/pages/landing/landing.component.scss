@@ -44,21 +44,6 @@ footer {
   gap: 1rem;
 }
 
-#footer .navigate ul {
-  gap: 2rem;
-}
-
-#footer .navigate .social-media li a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  inline-size: 3rem;
-  block-size: 3rem;
-  border-radius: 50%;
-  background-color: hsl(260, 63%, 58%);
-  border: 0.01rem solid hsla(0, 0%, 20%, 0.43);
-}
-
 /* end footer */
 
 /* Start Media Queries */

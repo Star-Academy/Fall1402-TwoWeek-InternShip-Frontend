@@ -29,59 +29,21 @@
     <p>فروش اکانت، خدمات اینترنتی و گیفت کارت</p>
 
     <div class="flex full-width gradient-background align-center space-between-content navigate">
-      <ul class="flex">
-        <li>
-          <a href="#">09135847536</a>
-        </li>
+    <app-footer-phone [items]="['09547856957', '09684523697']"></app-footer-phone>
 
-        <li>
-          <a href="#">09135847536</a>
-        </li>
-      </ul>
+    <app-footer-menu [items]="[
+    {link: '#', text: 'صفحه اصلی'},
+    {link: '#', text: 'محصولات'},
+    {link: '#', text: 'قوانین و مقررات'},
+    {link: '#', text: 'تماس با ما'}
+    ]"></app-footer-menu>
 
-      <ul class="flex">
-        <li>
-          <a href="#">صفحه اصلی</a>
-        </li>
-
-        <li>
-          <a href="#">محصولات</a>
-        </li>
-
-        <li>
-          <a href="#">قوانین و مقررات</a>
-        </li>
-
-        <li>
-          <a href="#">تماس با ما</a>
-        </li>
-      </ul>
-
-      <ul class="flex social-media">
-        <li>
-          <a href="#">
-            <i class="fa-brands fa-youtube"></i>
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            <i class="fa-brands fa-discord"></i>
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            <i class="fa-brands fa-facebook"></i>
-          </a>
-        </li>
-      </ul>
+      <app-footer-social [items]="[
+      {link: '#', icon: 'fa-brands fa-youtube'},
+      {link: '#', icon: 'fa-brands fa-twitter'},
+      {link: '#', icon: 'fa-brands fa-discord'},
+      {link: '#', icon: 'fa-brands fa-facebook'},
+      ]"></app-footer-social>
     </div>
   </div>
 </footer>
