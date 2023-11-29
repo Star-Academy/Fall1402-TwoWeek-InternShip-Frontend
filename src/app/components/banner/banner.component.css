@@ -1,0 +1,29 @@
+/* start banner */
+
+.banner {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.banner img {
+  inline-size: 50rem;
+}
+
+.banner .title {
+  font-size: 3rem;
+}
+
+.banner .title span {
+  background: linear-gradient(to left, hsl(0, 0%, 100%), hsla(0, 0%, 100%, 0.1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 6rem;
+}
+
+.banner .title p {
+  font-size: 1.2rem;
+  color: var(--dark-white);
+  padding-block-end: 1.2rem;
+}
+
+/* end banner */
