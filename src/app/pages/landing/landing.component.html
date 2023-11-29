@@ -5,79 +5,13 @@
 
 <main id="main" class="flex column">
   <app-banner></app-banner>
-
-  <section class="popular-game">
-    <button class="right">
-      <i class="fa-solid fa-arrow-left"></i>
-    </button>
-
-    <ul class="flex">
-      <li>
-        <img src="./assets/images/pubg.webp" alt="pubg banner">
-        <h3>بازی پابجی موبایل</h3>
-        <p>Buy pubg mobile</p>
-        <a href="#">
-          ادامه مطلب
-          <i class="fa-solid fa-arrow-left"></i>
-        </a>
-      </li>
-
-      <li>
-        <img src="./assets/images/pubg.webp" alt="pubg banner">
-        <h3>بازی پابجی موبایل</h3>
-        <p>Buy pubg mobile</p>
-        <a href="#">
-          ادامه مطلب
-          <i class="fa-solid fa-arrow-left"></i>
-        </a>
-      </li>
-
-      <li>
-        <img src="./assets/images/pubg.webp" alt="pubg banner">
-        <h3>بازی پابجی موبایل</h3>
-        <p>Buy pubg mobile</p>
-        <a href="#">
-          ادامه مطلب
-          <i class="fa-solid fa-arrow-left"></i>
-        </a>
-      </li>
-
-      <li>
-        <img src="./assets/images/pubg.webp" alt="pubg banner">
-        <h3>بازی پابجی موبایل</h3>
-        <p>Buy pubg mobile</p>
-        <a href="#">
-          ادامه مطلب
-          <i class="fa-solid fa-arrow-left"></i>
-        </a>
-      </li>
-
-      <li>
-        <img src="./assets/images/pubg.webp" alt="pubg banner">
-        <h3>بازی پابجی موبایل</h3>
-        <p>Buy pubg mobile</p>
-        <a href="#">
-          ادامه مطلب
-          <i class="fa-solid fa-arrow-left"></i>
-        </a>
-      </li>
-
-      <li>
-        <img src="./assets/images/pubg.webp" alt="pubg banner">
-        <h3>بازی پابجی موبایل</h3>
-        <p>Buy pubg mobile</p>
-        <a href="#">
-          ادامه مطلب
-          <i class="fa-solid fa-arrow-left"></i>
-        </a>
-      </li>
-    </ul>
-
-    <button class="left">
-      <i class="fa-solid fa-arrow-right"></i>
-    </button>
-  </section>
-
+  <app-popular-game [items]="[
+  {image: './assets/images/pubg.webp', title:'بازی پابجی موبایل', description: 'Buy pubg mobile', more: 'ادامه مطلب'},
+  {image: './assets/images/pubg.webp', title:'بازی پابجی موبایل', description: 'Buy pubg mobile', more: 'ادامه مطلب'},
+  {image: './assets/images/pubg.webp', title:'بازی پابجی موبایل', description: 'Buy pubg mobile', more: 'ادامه مطلب'},
+  {image: './assets/images/pubg.webp', title:'بازی پابجی موبایل', description: 'Buy pubg mobile', more: 'ادامه مطلب'},
+  {image: './assets/images/pubg.webp', title:'بازی پابجی موبایل', description: 'Buy pubg mobile', more: 'ادامه مطلب'}
+  ]"></app-popular-game>
   <section class="flex align-center offer">
     <div class="text">
       <i class="fa-solid fa-percent"></i>

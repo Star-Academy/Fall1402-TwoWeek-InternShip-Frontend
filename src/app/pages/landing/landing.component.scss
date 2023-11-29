@@ -18,75 +18,6 @@
 
 /* end header */
 
-/* start popular game */
-
-.popular-game ul::-webkit-scrollbar {
-  block-size: 0;
-}
-
-.popular-game, .offer .carousel {
-  position: relative;
-}
-
-.popular-game button, .offer .carousel :is(button.right, button.left) {
-  position: absolute;
-  inset-block-start: 50%;
-  transform: translateY(-50%);
-  background-color: hsl(225, 28%, 30%);
-  border-radius: 50%;
-  inline-size: 5rem;
-  block-size: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.popular-game button.right, .offer .carousel button.right {
-  inset-inline-end: -2.5rem;
-  z-index: 1;
-}
-
-.popular-game button.left, .offer .carousel button.left {
-  inset-inline-start: -2.5rem;
-}
-
-.popular-game ul, .offer .carousel ul {
-  overflow-x: auto;
-  gap: 2rem;
-}
-
-.popular-game ul li {
-  background-color: var(--dark-purple);
-  border-radius: 1.4rem;
-  min-inline-size: 21rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-block-start: 3rem;
-  padding-block-end: 1rem;
-}
-
-.popular-game ul li img {
-  inline-size: 50%;
-  border-radius: 50%;
-  padding-block-end: 1rem;
-}
-
-.popular-game ul li p, .offer .carousel ul li .description p, .offer .carousel ul li .description del {
-  color: var(--dark-white);
-  padding-block-start: 0.2rem;
-}
-
-.popular-game ul li a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.2rem;
-}
-
-/* end popular game */
-
 /* start offer */
 
 .offer {
@@ -131,10 +62,6 @@
   inline-size: 0;
 }
 
-.offer .carousel ul {
-
-}
-
 .offer .carousel ul::-webkit-scrollbar {
   block-size: 0;
 }
@@ -162,6 +89,37 @@
 .offer .carousel ul li .description .price p {
   color: hsl(0, 0%, 100%);
   font-size: 1.2rem;
+}
+
+.offer .carousel {
+  position: relative;
+}
+
+.offer .carousel :is(button.right, button.left) {
+  position: absolute;
+  inset-block-start: 50%;
+  transform: translateY(-50%);
+  background-color: hsl(225, 28%, 30%);
+  border-radius: 50%;
+  inline-size: 5rem;
+  block-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer .carousel button.right {
+  inset-inline-end: -2.5rem;
+  z-index: 1;
+}
+
+.offer .carousel button.left {
+  inset-inline-start: -2.5rem;
+}
+
+.offer .carousel ul {
+  overflow-x: auto;
+  gap: 2rem;
 }
 
 /* end offer */

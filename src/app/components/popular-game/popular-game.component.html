@@ -1,0 +1,21 @@
+<section class="popular-game">
+  <button class="right">
+    <i class="fa-solid fa-arrow-left"></i>
+  </button>
+
+  <ul class="flex">
+    <li *ngFor="let item of items">
+      <img src={{item.image}} alt="pubg banner">
+      <h3>{{item.title}}</h3>
+      <p>{{item.description}}</p>
+      <a href="#">
+        {{item.more}}
+        <i class="fa-solid fa-arrow-left"></i>
+      </a>
+    </li>
+  </ul>
+
+  <button class="left">
+    <i class="fa-solid fa-arrow-right"></i>
+  </button>
+</section>
