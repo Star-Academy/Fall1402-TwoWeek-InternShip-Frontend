@@ -87,7 +87,7 @@
             @include flex-box($direction: column, $align: flex-end);
 
             del{
-              color: hsla(0, 0%, 100%, 0.44);
+              color: $dark-white;
             }
 
             p {
