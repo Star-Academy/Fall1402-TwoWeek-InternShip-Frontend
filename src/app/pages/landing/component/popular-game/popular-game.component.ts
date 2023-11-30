@@ -7,5 +7,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './popular-game.component.css'
 })
 export class PopularGameComponent {
-  @Input() items!: {image: string, title: string, description: string, more: string}[];
+  @Input() items!: {image: string, title: string, description: string}[];
 }

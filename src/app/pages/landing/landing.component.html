@@ -1,16 +1,16 @@
-<header class="flex column" id="header">
+<header class="header">
   <app-upper-header></app-upper-header>
   <app-lower-header [menu]="menu"></app-lower-header>
 </header>
 
-<main id="main" class="flex column">
+<main class="main">
   <app-banner></app-banner>
   <app-popular-game [items]="[
-  {image: './assets/images/pubg.webp', title:'بازی پابجی موبایل', description: 'Buy pubg mobile', more: 'ادامه مطلب'},
-  {image: './assets/images/pubg.webp', title:'بازی پابجی موبایل', description: 'Buy pubg mobile', more: 'ادامه مطلب'},
-  {image: './assets/images/pubg.webp', title:'بازی پابجی موبایل', description: 'Buy pubg mobile', more: 'ادامه مطلب'},
-  {image: './assets/images/pubg.webp', title:'بازی پابجی موبایل', description: 'Buy pubg mobile', more: 'ادامه مطلب'},
-  {image: './assets/images/pubg.webp', title:'بازی پابجی موبایل', description: 'Buy pubg mobile', more: 'ادامه مطلب'}
+  {image: './assets/images/pubg.webp', title:'بازی پابجی موبایل', description: 'Buy pubg mobile'},
+  {image: './assets/images/pubg.webp', title:'بازی پابجی موبایل', description: 'Buy pubg mobile'},
+  {image: './assets/images/pubg.webp', title:'بازی پابجی موبایل', description: 'Buy pubg mobile'},
+  {image: './assets/images/pubg.webp', title:'بازی پابجی موبایل', description: 'Buy pubg mobile'},
+  {image: './assets/images/pubg.webp', title:'بازی پابجی موبایل', description: 'Buy pubg mobile'}
   ]"></app-popular-game>
   <app-offer-game [items]="[
   {image: './assets/images/callofduty.webp', title: 'خرید پی آر کال آف دیوتی', description: 'buy cp game call of duty mobile', oldPrice: '2,500,000', price: '2,000,000'},
@@ -20,4 +20,4 @@
   ]"></app-offer-game>
 </main>
 
-<app-footer class="full-width"></app-footer>
+<app-footer class="footer"></app-footer>

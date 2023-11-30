@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {OfferGameComponent} from "../../components/offer-game/offer-game.component";
+import {OfferGameComponent} from "../../pages/landing/component/offer-game/offer-game.component";
 
 
 

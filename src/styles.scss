@@ -1,11 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-:root {
-  --dark: hsl(217, 60%, 7%);
-  --dark-purple: hsl(228, 36%, 13%);
-  --grey: hsl(221, 36%, 21%);
-  --dark-white: hsl(0, 0%, 69%);
-  --gradient: linear-gradient(to right, hsl(258, 100%, 66%), hsl(238, 96%, 69%), hsl(319, 79%, 67%));
-}
+@use "styles/variables" as *;
+@use "styles/mixin" as *;
 
 @font-face {
   font-family: Vazir;
@@ -19,7 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: hsl(0, 0%, 100%);
+  color: $white;
 }
 
 * {
@@ -39,7 +34,7 @@ a {
 }
 
 body {
-  background-color: var(--dark);
+  background-color: $dark;
 }
 
 button, input {
@@ -52,46 +47,7 @@ input:focus-visible {
 }
 
 app-landing {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex-box($direction: column, $align: center);
+
   gap: 5rem;
 }
-
-.flex {
-  display: flex;
-}
-
-.column {
-  flex-direction: column;
-}
-
-.align-center {
-  align-items: center;
-}
-
-.align-end {
-  align-items: end;
-}
-
-.space-between-content {
-  justify-content: space-between;
-}
-
-.dark-background {
-  background-color: var(--dark);
-}
-
-.grey-background {
-  background-color: var(--grey);
-}
-
-.gradient-background {
-  background: var(--gradient);
-}
-
-.full-width {
-  inline-size: 100%;
-}
-
-

@@ -1,37 +1,21 @@
-/* general css */
+@use "../../../styles/mixin" as *;
 
-#header, #main{
+.header{
+  @include flex-box($direction: column);
+
   inline-size: min(1140px, 90%);
-}
-
-#main{
-  gap:5rem;
-}
-
-  /* start header */
-
-#header {
   font-size: 1.2rem;
   gap: 1rem;
   padding-block-start: 0.5rem;
 }
 
-/* end header */
+.main{
+  @include flex-box($direction: column);
 
-/* Start Media Queries */
-
-@media only screen and (max-width: 992px) {
-
-  #footer .navigate {
-    justify-content: center;
-  }
+  inline-size: min(1140px, 90%);
+  gap:5rem;
 }
 
-@media only screen and (max-width: 576px) {
-
-  #footer .navigate {
-    justify-content: center;
-  }
+.footer{
+  inline-size: 100%;
 }
-
-/* End Media Queries */

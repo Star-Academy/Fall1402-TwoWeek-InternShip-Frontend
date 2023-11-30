@@ -31,3 +31,21 @@ footer {
   flex-wrap: wrap;
   gap: 1rem;
 }
+
+/* Start Media Queries */
+
+@media only screen and (max-width: 992px) {
+
+  #footer .navigate {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+
+  #footer .navigate {
+    justify-content: center;
+  }
+}
+
+/* End Media Queries */
