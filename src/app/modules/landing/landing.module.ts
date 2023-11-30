@@ -7,8 +7,6 @@ import {PopularGameModule} from "../popular-game/popular-game.module";
 import {OfferGameModule} from "../offer-game/offer-game.module";
 import {FooterModule} from "../footer/footer.module";
 
-
-
 @NgModule({
   declarations: [LandingComponent],
   imports: [

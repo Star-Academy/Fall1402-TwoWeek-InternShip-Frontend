@@ -3,8 +3,7 @@ import { CommonModule } from '@angular/common';
 import {BannerComponent} from "../../pages/landing/component/banner/banner.component";
 import {BannerItemComponent} from "../../pages/landing/component/banner-item/banner-item.component";
 import {BannerButtonComponent} from "../../pages/landing/component/banner-button/banner-button.component";
-
-
+import {RouterLink} from "@angular/router";
 
 @NgModule({
   declarations: [BannerComponent, BannerItemComponent, BannerButtonComponent],
@@ -13,6 +12,7 @@ import {BannerButtonComponent} from "../../pages/landing/component/banner-button
   ],
   imports: [
     CommonModule,
+    RouterLink,
   ]
 })
 export class BannerModule { }

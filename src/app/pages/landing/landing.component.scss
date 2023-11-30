@@ -1,6 +1,6 @@
 @use "../../../styles/mixin" as *;
 
-.header{
+.header {
   @include flex-box($direction: column);
 
   inline-size: min(1140px, 90%);
@@ -9,13 +9,13 @@
   padding-block-start: 0.5rem;
 }
 
-.main{
+.main {
   @include flex-box($direction: column);
 
   inline-size: min(1140px, 90%);
-  gap:5rem;
+  gap: 5rem;
 }
 
-.footer{
+.footer {
   inline-size: 100%;
 }

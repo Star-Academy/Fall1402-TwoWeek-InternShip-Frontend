@@ -1,5 +1,4 @@
 import {Component, Input} from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-popular-game',
@@ -7,5 +6,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './popular-game.component.scss'
 })
 export class PopularGameComponent {
-  @Input() items!: {image: string, title: string, description: string}[];
+  @Input() items!: { image: string, title: string, description: string, link: string }[];
 }

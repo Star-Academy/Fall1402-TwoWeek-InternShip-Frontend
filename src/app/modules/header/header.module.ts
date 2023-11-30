@@ -2,8 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {UpperHeaderComponent} from "../../components/upper-header/upper-header.component";
 import {LowerHeaderComponent} from "../../components/lower-header/lower-header.component";
-
-
+import {RouterLink} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -12,6 +11,7 @@ import {LowerHeaderComponent} from "../../components/lower-header/lower-header.c
   ],
   imports: [
     CommonModule,
+    RouterLink,
   ],
   exports: [
     UpperHeaderComponent,

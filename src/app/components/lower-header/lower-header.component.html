@@ -3,7 +3,7 @@
   <nav>
     <ul>
       <li *ngFor="let item of menu" [ngClass]="{'active' : item.active}">
-        <a href="#">
+        <a [routerLink]="[]">
           {{item.name}}
           <i class="fa-solid fa-chevron-down"></i>
         </a>

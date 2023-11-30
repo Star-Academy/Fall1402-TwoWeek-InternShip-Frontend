@@ -8,29 +8,29 @@
   <nav class="navigate">
     <ul>
       <li class="active">
-        <a href="#">خانه</a>
+        <a [routerLink]="['/']">خانه</a>
       </li>
 
       <li>
-        <a href="#">محصولات</a>
+        <a [routerLink]="['/product']">محصولات</a>
       </li>
 
       <li>
-        <a href="#">درباره ما</a>
+        <a [routerLink]="['/about-us']">درباره ما</a>
       </li>
 
       <li>
-        <a href="#">تماس با ما</a>
+        <a [routerLink]="['/contact-us']">تماس با ما</a>
       </li>
     </ul>
   </nav>
 
   <div class="login">
-    <a href="#" class="cart">
+    <a [routerLink]="['/cart']" class="cart">
       <i class="fa-solid fa-cart-shopping"></i>
     </a>
 
-    <a href="#" class="account">
+    <a [routerLink]="['/account']" class="account">
       <i class="fa-solid fa-user"></i>
       <span>ورود به حساب</span>
     </a>
