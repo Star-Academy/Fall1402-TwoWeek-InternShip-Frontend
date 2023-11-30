@@ -1,7 +1,7 @@
-<div *ngIf="menu.length != 0" class="flex align-center full-width lower-part space-between-content">
+<div *ngIf="menu.length != 0" class="lower-part">
   <div class="burger-menu"><i class="fa-solid fa-bars fa-2xl"></i></div>
   <nav>
-    <ul class="flex">
+    <ul>
       <li *ngFor="let item of menu" [ngClass]="{'active' : item.active}">
         <a href="#">
           {{item.name}}
@@ -11,14 +11,14 @@
     </ul>
   </nav>
 
-  <div class="dark-background search">
+  <div class="search">
     <button>
       <i class="fa-solid fa-magnifying-glass"></i>
     </button>
 
     <input placeholder="جست و جوی آیتم ها">
 
-    <button class="grey-background filter">
+    <button class="filter">
       <i class="fa-solid fa-filter"></i>
     </button>
   </div>

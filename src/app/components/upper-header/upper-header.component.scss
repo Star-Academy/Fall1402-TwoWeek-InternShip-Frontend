@@ -1,45 +1,64 @@
-.upper-part {
+@use "./../../../styles/mixin" as *;
+@use "./../../../styles/variables" as *;
+
+.upper-part{
+  @include flex-box($align: center, $justify: space-between);
+
   flex-wrap: wrap;
   gap: 1rem;
-}
 
-.upper-part .brand{
-  gap: 1rem;
-}
+  .brand{
+    @include flex-box($align: center);
 
-.upper-part .logo{
-  padding: 0.5rem;
-  border-radius: 1rem;
-  block-size: 5.5rem;
-}
+    gap: 1rem;
+  }
 
-.upper-part .navigate ul li a{
-  display: block;
-  padding: 2rem 1.5rem;
-}
+  .logo{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    block-size: 5.5rem;
+    background-color: $dark-purple;
+  }
 
-.upper-part .navigate ul li a {
-  color: var(--dark-white);
-}
+  .navigate {
+    ul {
+      @include flex-box();
 
-.upper-part .navigate ul .active a {
-  color: hsl(0, 0%, 100%);
-  border-top: 0.3rem solid hsl(0, 0%, 100%);
-}
+      li a {
+        display: block;
+        padding: 2rem 1.5rem;
+        color: $dark-white;
+      }
 
-.upper-part .cart {
-  padding: 2rem;
-}
+      .active a {
+        color: $white;
+        border-top: 0.3rem solid $white;
+      }
+    }
+  }
 
-.upper-part .account {
-  background-color: hsl(0, 0%, 100%);
-  padding: 1.5rem;
-  border-radius: 5rem;
-  gap: 1rem;
-}
+  .login {
+    @include flex-box($align: center);
 
-.upper-part .account span, .upper-part .account i::before {
-  color: var(--dark);
+    .cart {
+      padding: 2rem;
+    }
+
+    .account {
+      @include flex-box($align: center);
+
+      background-color: $white;
+      padding: 1.5rem;
+      border-radius: 5rem;
+      gap: 1rem;
+
+      span, i::before {
+        color: $dark;
+      }
+    }
+
+
+  }
 }
 
 @media only screen and (max-width: 992px) {
