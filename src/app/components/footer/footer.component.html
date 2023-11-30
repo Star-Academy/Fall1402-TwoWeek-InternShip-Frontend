@@ -1,0 +1,27 @@
+<footer class="flex column align-center full-width">
+  <div class="flex column align-center" id="footer">
+    <img src="assets/images/icon.webp" alt="game store logo" class="logo grey-background">
+
+    <h3 class="title">فروشگاه بازی</h3>
+
+    <p>فروش اکانت، خدمات اینترنتی و گیفت کارت</p>
+
+    <div class="flex full-width gradient-background align-center space-between-content navigate">
+      <app-footer-phone [items]="['09547856957', '09684523697']"></app-footer-phone>
+
+      <app-footer-menu [items]="[
+    {link: '#', text: 'صفحه اصلی'},
+    {link: '#', text: 'محصولات'},
+    {link: '#', text: 'قوانین و مقررات'},
+    {link: '#', text: 'تماس با ما'}
+    ]"></app-footer-menu>
+
+      <app-footer-social [items]="[
+      {link: '#', icon: 'fa-brands fa-youtube'},
+      {link: '#', icon: 'fa-brands fa-twitter'},
+      {link: '#', icon: 'fa-brands fa-discord'},
+      {link: '#', icon: 'fa-brands fa-facebook'},
+      ]"></app-footer-social>
+    </div>
+  </div>
+</footer>

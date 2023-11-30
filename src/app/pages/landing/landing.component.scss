@@ -1,6 +1,6 @@
 /* general css */
 
-#header, #main, #footer {
+#header, #main{
   inline-size: min(1140px, 90%);
 }
 
@@ -8,7 +8,7 @@
   gap:5rem;
 }
 
-/* start header */
+  /* start header */
 
 #header {
   font-size: 1.2rem;
@@ -17,34 +17,6 @@
 }
 
 /* end header */
-
-/* start footer */
-
-footer {
-  background-color: var(--dark-purple);
-  padding: 2rem;
-}
-
-#footer .title {
-  font-size: 2.4rem;
-  padding-block-start: 2rem;
-}
-
-#footer p {
-  font-size: 1.2rem;
-  color: var(--dark-white);
-  padding-block-end: 2rem;
-}
-
-#footer .navigate {
-  font-size: 1.2rem;
-  padding: 1rem 2rem;
-  border-radius: 1rem;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-/* end footer */
 
 /* Start Media Queries */
 
