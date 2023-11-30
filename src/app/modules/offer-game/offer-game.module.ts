@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
 import {OfferGameComponent} from "../../pages/landing/component/offer-game/offer-game.component";
 import {RouterLink} from "@angular/router";
 
@@ -12,7 +12,8 @@ import {RouterLink} from "@angular/router";
   ],
   imports: [
     CommonModule,
-    RouterLink
+    RouterLink,
+    NgOptimizedImage
   ]
 })
 export class OfferGameModule { }
