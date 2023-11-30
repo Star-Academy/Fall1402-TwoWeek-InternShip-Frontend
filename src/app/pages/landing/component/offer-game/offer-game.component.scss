@@ -1,0 +1,125 @@
+@use "./../../../../../styles/mixin" as *;
+@use "./../../../../../styles/variables" as *;
+
+.offer {
+  @include flex-box($align: center);
+
+  background-color: hsl(228, 36%, 13%);
+  border-radius: 1.4rem;
+  padding: 5rem;
+  gap: 5rem;
+
+  .text {
+    flex: 3;
+
+    .fa-percent {
+      background: $gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 6rem;
+      padding-block-end: 2rem;
+    }
+
+    h3 {
+      font-size: 3rem;
+      font-weight: lighter;
+      padding-block-end: 2rem;
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    a {
+      @include flex-box($align: center);
+
+      font-size: 1.4rem;
+      gap: 0.5rem;
+    }
+  }
+
+  .carousel {
+    flex: 7;
+    inline-size: 0;
+    position: relative;
+
+    ul::-webkit-scrollbar {
+        block-size: 0;
+    }
+
+    ul{
+      @include flex-box();
+
+      overflow-x: auto;
+      gap: 2rem;
+
+      li {
+        min-inline-size: 23rem;
+        position: relative;
+
+        img {
+          inline-size: 100%;
+          border-radius: 1.4rem;
+        }
+
+        .description {
+          @include flex-box($direction: column, $align: center, $justify: space-between);
+
+          position: absolute;
+          inset-block-end: 0.5rem;
+          inline-size: 100%;
+          block-size: 50%;
+          border-radius: 1.4rem;
+          background-color: hsla(0, 0%, 0%, 0.73);
+          padding: 3rem;
+
+          .title {
+            @include flex-box($direction: column, $align: center);
+          }
+
+          .buy {
+            @include flex-box($justify: space-between);
+
+            width: 100%;
+          }
+
+          .price {
+            @include flex-box($direction: column, $align: flex-end);
+
+            del{
+              color: hsla(0, 0%, 100%, 0.44);
+            }
+
+            p {
+              color: $white;
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+
+    *:is(button.right, button.left) {
+      position: absolute;
+      inset-block-start: 50%;
+      transform: translateY(-50%);
+      background-color: hsl(225, 28%, 30%);
+      border-radius: 50%;
+      inline-size: 5rem;
+      block-size: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    button.right {
+      inset-inline-end: -2.5rem;
+      z-index: 1;
+
+    }
+
+    button.left {
+      inset-inline-start: -2.5rem;
+    }
+  }
+}
