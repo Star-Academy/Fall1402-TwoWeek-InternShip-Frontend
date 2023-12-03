@@ -1,25 +1,25 @@
 <div *ngIf="menu.length != 0" class="lower-part">
-  <div class="burger-menu"><i class="fa-solid fa-bars fa-2xl"></i></div>
-  <nav>
-    <ul>
-      <li *ngFor="let item of menu" [ngClass]="{'active' : item.active}">
-        <a [routerLink]="[]">
-          {{item.name}}
-          <i class="fa-solid fa-chevron-down"></i>
-        </a>
-      </li>
-    </ul>
-  </nav>
+    <div class="burger-menu"><i class="fa-solid fa-bars fa-2xl"></i></div>
+    <nav>
+        <ul>
+            <li *ngFor="let item of menu; trackBy: identify" [ngClass]="{'active' : item.active}">
+                <a [routerLink]="[]">
+                    {{item.name}}
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
-  <div class="search">
-    <button>
-      <i class="fa-solid fa-magnifying-glass"></i>
-    </button>
+    <div class="search">
+        <button>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
 
-    <input placeholder="جست و جوی آیتم ها">
+        <input placeholder="جست و جوی آیتم ها">
 
-    <button class="filter">
-      <i class="fa-solid fa-filter"></i>
-    </button>
-  </div>
+        <button class="filter">
+            <i class="fa-solid fa-filter"></i>
+        </button>
+    </div>
 </div>

@@ -7,20 +7,10 @@
 
   <nav class="navigate">
     <ul>
-      <li class="active">
-        <a [routerLink]="['/']">خانه</a>
-      </li>
-
-      <li>
-        <a [routerLink]="['/product']">محصولات</a>
-      </li>
-
-      <li>
-        <a [routerLink]="['/about-us']">درباره ما</a>
-      </li>
-
-      <li>
-        <a [routerLink]="['/contact-us']">تماس با ما</a>
+      <li *ngFor="let item of menu; trackBy: identify" [ngClass]="{'active' : item.active}">
+        <a [routerLink]="[item.link]">
+          {{item.name}}
+        </a>
       </li>
     </ul>
   </nav>

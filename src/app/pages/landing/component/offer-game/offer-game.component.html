@@ -1,49 +1,49 @@
 <section class="offer">
-  <div class="text">
-    <i class="fa-solid fa-percent"></i>
+    <div class="text">
+        <i class="fa-solid fa-percent"></i>
 
-    <h3>
-      تخفیفات
-      <br>
-      <span>شگفت انگیز</span>
-    </h3>
+        <h3>
+            تخفیفات
+            <br>
+            <span>شگفت انگیز</span>
+        </h3>
 
-    <a [routerLink]="['/shop']">مشاهده همه<i class="fa-solid fa-arrow-left"></i></a>
-  </div>
+        <a [routerLink]="['/shop']">مشاهده همه<i class="fa-solid fa-arrow-left"></i></a>
+    </div>
 
-  <div class="carousel">
-    <button class="right">
-      <i class="fa-solid fa-arrow-left"></i>
-    </button>
+    <div class="carousel">
+        <button class="right">
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
 
-    <ul>
-      <li *ngFor="let item of items">
-        <div>
-          <img ngSrc={{item.image}} alt="call of duty banner" width="230" height="306.66">
+        <ul>
+            <li *ngFor="let item of items; trackBy: identify">
+                <div>
+                    <img ngSrc={{item.image}} alt="call of duty banner" width="230" height="306.66">
 
-          <div class="description">
-            <div class="title">
-              <h3>{{item.title}}</h3>
-              <p>{{item.description}}</p>
-            </div>
+                    <div class="description">
+                        <div class="title">
+                            <h3>{{item.title}}</h3>
+                            <p>{{item.description}}</p>
+                        </div>
 
-            <div class="buy">
-              <button >
-                <i class="fa-solid fa-cart-shopping"></i>
-              </button>
+                        <div class="buy">
+                            <button>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
 
-              <div class="price">
-                <del>{{item.oldPrice}}</del>
-                <p>{{item.price}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </li>
-    </ul>
+                            <div class="price">
+                                <del>{{item.oldPrice}}</del>
+                                <p>{{item.price}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
 
-    <button class="left">
-      <i class="fa-solid fa-arrow-right"></i>
-    </button>
-  </div>
+        <button class="left">
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </div>
 </section>

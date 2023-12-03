@@ -1,9 +1,9 @@
 <div class="items">
-  <ul>
-    <li *ngFor="let item of items">
-      <i class={{item.icon}}></i>
-      <p>{{item.title}}</p>
-      <p>{{item.description}}</p>
-    </li>
-  </ul>
+    <ul>
+        <li *ngFor="let item of items; trackBy: identify">
+            <i class={{item.icon}}></i>
+            <p>{{item.title}}</p>
+            <p>{{item.description}}</p>
+        </li>
+    </ul>
 </div>
