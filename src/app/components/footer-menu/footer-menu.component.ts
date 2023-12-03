@@ -1,5 +1,4 @@
 import {Component, Input} from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-footer-menu',
@@ -7,5 +6,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './footer-menu.component.scss'
 })
 export class FooterMenuComponent {
-  @Input() items!: {link: string, text: string}[];
+  @Input() items: { link: string, text: string }[] = [];
 }

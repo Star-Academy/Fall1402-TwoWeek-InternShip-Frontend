@@ -10,14 +10,9 @@
       <p>همه گیمر ها امروز ناچار به استفاده از سرویس های پولی شرکت ها و کمپانی های بزرگ هستند</p>
     </div>
     <div class="buttons">
-      <app-banner-button [item]="{style: 'gradient-background', text: 'خرید آیتم های بازی', link: '/shop'}"></app-banner-button>
-      <app-banner-button [item]="{style: '', text: 'دیگر خریدها', link: '/shop'}"></app-banner-button>
+      <app-banner-button [item]="button[0]"></app-banner-button>
+      <app-banner-button [item]="button[1]"></app-banner-button>
     </div>
-    <app-banner-item [items]="[
-    {icon: 'fa-solid fa-truck-ramp-box', title: 'تحویل آنی', description: 'نیاز نیست صبر کنی!'},
-    {icon: 'fa-solid fa-comments', title: 'پشتیبانی', description: 'پاسخگویی ۲۴ ساعته'},
-    {icon: 'fa-solid fa-star', title: 'رضایت مشتریان', description: 'اولویت ما رضایت مشتریانمان است'}
-    ]">
-    </app-banner-item>
+    <app-banner-item [items]="option"></app-banner-item>
   </div>
 </section>

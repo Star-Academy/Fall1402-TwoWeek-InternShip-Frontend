@@ -6,5 +6,5 @@ import {Component, Input} from '@angular/core';
   styleUrl: './popular-game.component.scss'
 })
 export class PopularGameComponent {
-  @Input() items!: { image: string, title: string, description: string, link: string }[];
+  @Input() items: { image: string, title: string, description: string, link: string }[] = [];
 }

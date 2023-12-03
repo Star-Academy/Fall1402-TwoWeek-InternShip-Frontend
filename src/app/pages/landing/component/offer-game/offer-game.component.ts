@@ -6,5 +6,5 @@ import {Component, Input} from '@angular/core';
   styleUrl: './offer-game.component.scss'
 })
 export class OfferGameComponent {
-  @Input() items!: {image: string, title: string, description: string, oldPrice: string, price: string}[];
+  @Input() items: {image: string, title: string, description: string, oldPrice: string, price: string}[] = [];
 }

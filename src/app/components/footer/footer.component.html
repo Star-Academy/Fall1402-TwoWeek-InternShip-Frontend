@@ -7,21 +7,11 @@
     <p>فروش اکانت، خدمات اینترنتی و گیفت کارت</p>
 
     <div class="navigate">
-      <app-footer-phone [items]="['09547856957', '09684523697']"></app-footer-phone>
+      <app-footer-phone [items]="phone"></app-footer-phone>
 
-      <app-footer-menu [items]="[
-    {link: '/', text: 'صفحه اصلی'},
-    {link: '/product', text: 'محصولات'},
-    {link: '/privacy', text: 'قوانین و مقررات'},
-    {link: '/contact-us', text: 'تماس با ما'}
-    ]"></app-footer-menu>
+      <app-footer-menu [items]="menu"></app-footer-menu>
 
-      <app-footer-social [items]="[
-      {link: '#', icon: 'fa-brands fa-youtube'},
-      {link: '#', icon: 'fa-brands fa-twitter'},
-      {link: '#', icon: 'fa-brands fa-discord'},
-      {link: '#', icon: 'fa-brands fa-facebook'},
-      ]"></app-footer-social>
+      <app-footer-social [items]="socialMedia"></app-footer-social>
     </div>
   </div>
 </footer>

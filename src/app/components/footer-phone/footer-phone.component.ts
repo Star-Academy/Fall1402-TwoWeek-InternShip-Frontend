@@ -1,5 +1,4 @@
 import {Component, Input} from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-footer-phone',
@@ -7,5 +6,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './footer-phone.component.scss'
 })
 export class FooterPhoneComponent {
-  @Input() items!: string[];
+  @Input() items: string[] = [];
 }

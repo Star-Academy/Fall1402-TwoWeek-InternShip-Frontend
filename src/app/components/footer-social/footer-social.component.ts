@@ -1,5 +1,4 @@
 import {Component, Input} from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-footer-social',
@@ -7,5 +6,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './footer-social.component.scss'
 })
 export class FooterSocialComponent {
-  @Input() items!: {link: string, icon: string}[];
+  @Input() items: { link: string, icon: string }[] = [];
 }
