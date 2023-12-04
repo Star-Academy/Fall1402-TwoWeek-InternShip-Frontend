@@ -1,28 +1,29 @@
 @use "./../../../../../styles/variables" as *;
 @use "./../../../../../styles/mixin" as *;
 
-.popular-game ul::-webkit-scrollbar {
-  block-size: 0;
-}
-
 .popular-game {
   position: relative;
 
   button {
-    position: absolute;
-    inset-block-start: 50%;
-    transform: translateY(-50%);
-    background-color: hsl(225, 28%, 30%);
-    border-radius: 50%;
+    @include flex-box($align: center, $justify: center);
+
     inline-size: 5rem;
     block-size: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+    background-color: hsl(225, 28%, 30%);
+
+    inset-block-start: 50%;
+
+    position: absolute;
+
+    transform: translateY(-50%);
+
+    border-radius: 50%;
   }
 
   button.right {
     inset-inline-end: -2.5rem;
+
     z-index: 1;
   }
 
@@ -32,37 +33,43 @@
 
   ul {
     @include flex-box();
-
-    overflow-x: auto;
     gap: 2rem;
 
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      block-size: 0;
+    }
+
     li {
-      background-color: $dark-purple;
-      border-radius: 1.4rem;
+      @include flex-box($direction: column, $align: center, $justify: center);
+
       min-inline-size: 21rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+
       padding-block-start: 3rem;
       padding-block-end: 1rem;
 
+      background-color: $dark-purple;
+
+      border-radius: 1.4rem;
+
       img {
         inline-size: 50%;
-        border-radius: 50%;
+
         padding-block-end: 1rem;
+
+        border-radius: 50%;
       }
 
       p {
-        color: $dark-white;
         padding-block-start: 0.2rem;
+
+        color: $dark-white;
       }
     }
 
     a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex-box($align: center, $justify: center);
       gap: 0.2rem;
     }
   }

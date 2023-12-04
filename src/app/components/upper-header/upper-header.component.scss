@@ -1,23 +1,24 @@
 @use "./../../../styles/mixin" as *;
 @use "./../../../styles/variables" as *;
 
-.upper-part{
+.upper-part {
   @include flex-box($align: center, $justify: space-between);
-
   flex-wrap: wrap;
   gap: 1rem;
 
-  .brand{
+  .brand {
     @include flex-box($align: center);
-
     gap: 1rem;
   }
 
-  .logo{
-    padding: 0.5rem;
-    border-radius: 1rem;
-    block-size: 5.5rem;
+  .logo {
     background-color: $dark-purple;
+
+    block-size: 5.5rem;
+
+    padding: 0.5rem;
+
+    border-radius: 1rem;
   }
 
   .navigate {
@@ -26,12 +27,15 @@
 
       li a {
         display: block;
-        padding: 2rem 1.5rem;
+
         color: $dark-white;
+
+        padding: 2rem 1.5rem;
       }
 
       .active a {
         color: $white;
+
         border-top: 0.3rem solid $white;
       }
     }
@@ -46,23 +50,22 @@
 
     .account {
       @include flex-box($align: center);
+      gap: 1rem;
 
       background-color: $white;
+
       padding: 1.5rem;
+
       border-radius: 5rem;
-      gap: 1rem;
 
       span, i::before {
         color: $dark;
       }
     }
-
-
   }
 }
 
 @media only screen and (max-width: 992px) {
-
   .upper-part .account span {
     display: none;
   }

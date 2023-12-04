@@ -1,45 +1,53 @@
 @use "./../../../../../styles/mixin" as *;
 
-.items{
+.items {
   ul {
     @include flex-box();
-
-    padding-block-start: 1.2rem;
     gap: 2rem;
 
-    li{
+    padding-block-start: 1.2rem;
+
+    li {
       i {
-        font-size: 2.5rem;
         padding-block-end: 1.2rem;
+
+        font-size: 2.5rem;
       }
 
       .fa-truck-ramp-box::before {
         background: linear-gradient(to right, hsl(341, 92%, 69%), hsl(327, 33%, 45%));
+
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
 
       .fa-comments::before {
         background: linear-gradient(to right, hsl(258, 49%, 57%), hsl(250, 23%, 36%));
+
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
 
       .fa-star::before {
         background: linear-gradient(to right, hsl(9, 97%, 75%), hsl(346, 12%, 35%));
+
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
     }
   }
 
-  p:first-child {
-    font-size: 1.6rem;
-  }
+  p {
+    &:first-child {
+      font-size: 1.6rem;
+    }
 
-  p:last-child {
-    padding-block-start: 0.8rem;
-    font-size: 1.2rem;
-    color: var(--dark-white);
+    &:last-child {
+      color: var(--dark-white);
+
+      padding-block-start: 0.8rem;
+
+      font-size: 1.2rem;
+    }
   }
 }

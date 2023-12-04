@@ -1,15 +1,18 @@
 @use "./../../../styles/variables" as *;
 @use "./../../../styles/mixin" as *;
 
-.lower-part{
+.lower-part {
   @include flex-box($align: center, $justify: space-between);
-
-  border-radius: 1.5rem;
-  background-color: $dark-purple;
   flex-wrap: wrap;
   gap: 1rem;
+
+  inline-size: 100%;
+
+  background-color: $dark-purple;
+
   padding-inline-end: 1.2rem;
-  width: 100%;
+
+  border-radius: 1.5rem;
 
   .burger-menu {
     display: none;
@@ -20,13 +23,15 @@
 
     li a {
       display: block;
-      padding: 2rem 1.5rem;
+
       color: $dark-white;
+
+      padding: 2rem 1.5rem;
 
       i {
         font-size: 1rem;
 
-        *::before {
+        &::before {
           color: $dark-white;
         }
       }
@@ -34,15 +39,22 @@
 
     li.active {
       position: relative;
-      *::after {
+
+      &::after {
         content: "";
+
         display: inline-block;
+
         background-color: $white;
+
         inline-size: 15%;
         block-size: 0.2rem;
-        position: absolute;
+
         inset-block-end: -0.1rem;
         inset-inline-end: 6.5rem;
+
+        position: absolute;
+
         border-radius: 1rem;
       }
     }
@@ -58,31 +70,41 @@
 }
 
 .search {
-  border-radius: 0.7rem;
-  padding: 0.6rem;
   background-color: $dark;
 
-  * {
+  padding: 0.6rem;
+
+  border-radius: 0.7rem;
+
+  & > * {
     padding: 0.6rem;
   }
 
   .filter {
-    position: relative;
-    border-radius: 0.4rem;
     background-color: $grey;
+
+    position: relative;
+
+    border-radius: 0.4rem;
+
     i {
       padding-block-start: 1rem;
-    }
 
-    i::after {
-      content: '';
-      position: absolute;
-      inline-size: 0.2rem;
-      block-size: 80%;
-      display: inline-block;
-      background-color: $grey;
-      inset-inline-end: 5rem;
-      inset-block-start: 0.4rem;
+      &::after {
+        content: '';
+
+        display: inline-block;
+
+        background-color: $grey;
+
+        inline-size: 0.2rem;
+        block-size: 80%;
+
+        inset-inline-end: 5rem;
+        inset-block-start: 0.4rem;
+
+        position: absolute;
+      }
     }
   }
 }
@@ -90,11 +112,12 @@
 @media only screen and (max-width: 992px) {
 
   .lower-part {
-    position: relative;
     padding-block-start: 1rem;
     padding-block-end: 1rem;
     padding-inline-start: 2rem;
     padding-inline-end: 1rem;
+
+    position: relative;
 
     .burger-menu {
       display: block;
@@ -106,15 +129,23 @@
 
     nav {
       display: none;
-      position: absolute;
-      inset-block-end: -8rem;
+
       inset-inline: 0;
-      background:$dark-purple;
+
+      inset-block-end: -8rem;
+
+      background: $dark-purple;
+
       box-shadow: 0 8px 32px 0 hsla(236, 63%, 33%, 0.37);
+
       backdrop-filter: blur(4px);
       -webkit-backdrop-filter: blur(4px);
+
       border: 1px solid hsla(0, 0%, 100%, 0.18);
+
       border-radius: 1.5rem;
+
+      position: absolute;
 
       li::after {
         display: none !important;

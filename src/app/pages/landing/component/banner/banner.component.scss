@@ -3,17 +3,15 @@
 
 .banner {
   @include flex-box($align: center);
-
   flex-wrap: wrap;
   justify-content: center;
 
-  .part{
+  .part {
     @include flex-box($direction: column, $align: center);
-
     gap: 2.4rem;
   }
 
-  .buttons{
+  .buttons {
     @include flex-box();
   }
 
@@ -26,15 +24,19 @@
 
     span {
       background: linear-gradient(to left, hsl(0, 0%, 100%), hsla(0, 0%, 100%, 0.1));
+
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+
       font-size: 6rem;
     }
 
     p {
-      font-size: 1.2rem;
       color: var(--dark-white);
+
       padding-block-end: 1.2rem;
+
+      font-size: 1.2rem;
     }
   }
 }

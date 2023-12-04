@@ -1,4 +1,6 @@
-ul{
-  display: flex;
+@use "./../../../styles/mixin" as *;
+
+ul {
+  @include flex-box();
   gap: 2rem;
 }
