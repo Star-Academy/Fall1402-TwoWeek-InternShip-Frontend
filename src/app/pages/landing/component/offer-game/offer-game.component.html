@@ -8,7 +8,7 @@
             <span>شگفت انگیز</span>
         </h3>
 
-        <a [routerLink]="['/shop']">مشاهده همه<i class="fa-solid fa-arrow-left"></i></a>
+        <a [routerLink]="'/shop'">مشاهده همه<i class="fa-solid fa-arrow-left"></i></a>
     </div>
 
     <div class="carousel">
@@ -19,7 +19,7 @@
         <ul>
             <li *ngFor="let item of items; trackBy: identify">
                 <div>
-                    <img ngSrc={{item.image}} alt="call of duty banner" width="230" height="306.66">
+                    <img [ngSrc]="item.image" alt="call of duty banner" width="230" height="306.66">
 
                     <div class="description">
                         <div class="title">

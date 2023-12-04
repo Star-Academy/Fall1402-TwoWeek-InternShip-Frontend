@@ -5,10 +5,10 @@
 
     <ul>
         <li *ngFor="let item of items; trackBy: identify">
-            <img ngSrc={{item.image}} alt="pubg banner" width="106" height="116">
+            <img [ngSrc]="item.image" alt="pubg banner" width="106" height="116">
             <h3>{{item.title}}</h3>
             <p>{{item.description}}</p>
-            <a [routerLink]="[item.link]">
+            <a [routerLink]="item.link">
                 ادامه مطلب
                 <i class="fa-solid fa-arrow-left"></i>
             </a>

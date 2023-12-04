@@ -8,7 +8,7 @@
   <nav class="navigate">
     <ul>
       <li *ngFor="let item of menu; trackBy: identify" [ngClass]="{'active' : item.active}">
-        <a [routerLink]="[item.link]">
+        <a [routerLink]="item.link">
           {{item.name}}
         </a>
       </li>
@@ -16,11 +16,11 @@
   </nav>
 
   <div class="login">
-    <a [routerLink]="['/cart']" class="cart">
+    <a [routerLink]="'/cart'" class="cart">
       <i class="fa-solid fa-cart-shopping"></i>
     </a>
 
-    <a [routerLink]="['/account']" class="account">
+    <a [routerLink]="'/account'" class="account">
       <i class="fa-solid fa-user"></i>
       <span>ورود به حساب</span>
     </a>
