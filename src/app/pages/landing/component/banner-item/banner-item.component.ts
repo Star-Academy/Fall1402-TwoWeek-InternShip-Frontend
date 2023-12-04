@@ -1,14 +1,21 @@
 import {Component, Input} from '@angular/core';
 
+interface optionItemInterface {
+    id: number,
+    icon: string,
+    title: string,
+    description: string,
+}
+
 @Component({
     selector: 'app-banner-item',
     templateUrl: './banner-item.component.html',
     styleUrl: './banner-item.component.scss'
 })
 export class BannerItemComponent {
-    @Input() items: { id: number, icon: string, title: string, description: string }[] = [];
+    @Input() items: optionItemInterface[] = [];
 
-    identify(index: number, item: { id: number, icon: string, title: string, description: string }): number {
+    identify(index: number, item: optionItemInterface): number {
         return item.id;
     }
 }
