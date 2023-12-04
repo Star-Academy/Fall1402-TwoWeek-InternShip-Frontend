@@ -115,7 +115,7 @@
       }
     }
 
-    *:is(button.right, button.left) {
+    &:is(button.right, button.left) {
       @include flex-box($align: center, $justify: center);
 
       inline-size: 5rem;
