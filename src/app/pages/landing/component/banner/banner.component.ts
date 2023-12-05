@@ -15,8 +15,7 @@ export class BannerComponent {
     {id: 2, icon: faStar, title: "رضایت مشتریان", description: "اولویت ما رضایت مشتریانمان است"},
   ];
 
-  public buttons: buttonItem[] = [
-    {style: "gradient-background", text: "خرید آیتم های بازی", link: "/shop"},
-    {style: "", text: "دیگر خریدها", link: "/shop"},
-  ];
+  public buyItemsButton: buttonItem = {style: "gradient-background", text: "خرید آیتم های بازی", link: "/shop"};
+
+  public buyOthersButton: buttonItem =  {style: "", text: "دیگر خریدها", link: "/shop"};
 }
