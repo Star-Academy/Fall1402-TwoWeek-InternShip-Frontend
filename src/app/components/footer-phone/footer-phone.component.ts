@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {phoneItem} from "../modules/footer-phone";
+import {phoneItem} from "../models/footer-phone";
 
 @Component({
     selector: 'app-footer-phone',

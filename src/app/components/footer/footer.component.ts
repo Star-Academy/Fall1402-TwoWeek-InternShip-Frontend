@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
-import {menuItem} from "../modules/footer-menu";
-import {socialMediaItem} from "../modules/footer-social-media";
-import {phoneItem} from "../modules/footer-phone";
+import {menuItem} from "../models/footer-menu";
+import {socialMediaItem} from "../models/footer-social-media";
+import {phoneItem} from "../models/footer-phone";
 import {faYoutube, faFacebook, faTwitter, faDiscord} from "@fortawesome/free-brands-svg-icons";
 
 @Component({

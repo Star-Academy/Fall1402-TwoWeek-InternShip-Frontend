@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
-import {menuItem} from "../../components/modules/header-lower-menu";
-import {popularGameItem} from "./modules/popular-game";
-import {offerGameItem} from "./modules/offer-game";
+import {menuItem} from "../../components/models/header-lower-menu";
+import {popularGameItem} from "./models/popular-game";
+import {offerGameItem} from "./models/offer-game";
 
 @Component({
   selector: 'app-landing',

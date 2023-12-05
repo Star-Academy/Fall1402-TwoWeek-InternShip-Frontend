@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
-import {optionItem} from "../../modules/banner-option";
-import {buttonItem} from "../../modules/banner-button";
+import {optionItem} from "../../models/banner-option";
+import {buttonItem} from "../../models/banner-button";
 import {faTruckRampBox, faComment, faStar} from "@fortawesome/free-solid-svg-icons";
 
 @Component({

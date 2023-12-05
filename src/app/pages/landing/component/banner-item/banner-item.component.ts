@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {optionItem} from "../../modules/banner-option";
+import {optionItem} from "../../models/banner-option";
 
 @Component({
     selector: 'app-banner-item',

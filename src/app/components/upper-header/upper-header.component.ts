@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {menuItem} from "../modules/header-upper-menu";
+import {menuItem} from "../models/header-upper-menu";
 import { faCartShopping, faUser } from '@fortawesome/free-solid-svg-icons';
 
 @Component({

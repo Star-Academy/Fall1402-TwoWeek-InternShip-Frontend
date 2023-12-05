@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {buttonItem} from "../../modules/banner-button";
+import {buttonItem} from "../../models/banner-button";
 import {faArrowLeft} from "@fortawesome/free-solid-svg-icons";
 
 @Component({

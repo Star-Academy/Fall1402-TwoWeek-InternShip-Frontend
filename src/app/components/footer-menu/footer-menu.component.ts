@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {menuItem} from "../modules/footer-menu";
+import {menuItem} from "../models/footer-menu";
 
 @Component({
     selector: 'app-footer-menu',

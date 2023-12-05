@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {menuItem} from "../modules/header-lower-menu";
+import {menuItem} from "../models/header-lower-menu";
 import {faMagnifyingGlass, faFilter, faChevronDown} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
