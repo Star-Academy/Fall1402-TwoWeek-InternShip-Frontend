@@ -1,12 +1,5 @@
 import {Component, Input} from '@angular/core';
-
-interface popularGameItemInterface {
-    id: number,
-    image: string,
-    title: string,
-    description: string,
-    link: string,
-}
+import {popularGameItem} from "../../modules/popular-game";
 
 @Component({
     selector: 'app-popular-game',
@@ -15,9 +8,9 @@ interface popularGameItemInterface {
 })
 
 export class PopularGameComponent {
-    @Input() items: popularGameItemInterface[] = [];
+    @Input() public items: popularGameItem[] = [];
 
-    identify(index: number, item: popularGameItemInterface): number {
+    public identify(index: number, item: popularGameItem): number {
         return item.id;
     }
 }

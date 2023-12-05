@@ -1,10 +1,5 @@
 import {Component, Input} from '@angular/core';
-
-interface IMenuItem {
-    id: number,
-    name: string,
-    active: boolean,
-}
+import {menuItem} from "../modules/header-lower-menu";
 
 @Component({
     selector: 'app-lower-header',
@@ -12,9 +7,9 @@ interface IMenuItem {
     styleUrl: './lower-header.component.scss'
 })
 export class LowerHeaderComponent {
-    @Input() public menu: IMenuItem[] = [];
+    @Input() public menu: menuItem[] = [];
 
-    identify(index: number, item: IMenuItem): number {
+    public identify(index: number, item: menuItem): number {
         return item.id;
     };
 }

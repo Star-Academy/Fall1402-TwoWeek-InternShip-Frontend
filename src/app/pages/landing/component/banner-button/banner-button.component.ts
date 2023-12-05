@@ -1,10 +1,5 @@
 import {Component, Input} from '@angular/core';
-
-interface buttonItemInterface {
-    style: string,
-    text: string,
-    link: string,
-}
+import {buttonItem} from "../../modules/banner-button";
 
 @Component({
     selector: 'app-banner-button',
@@ -12,9 +7,9 @@ interface buttonItemInterface {
     styleUrl: './banner-button.component.scss'
 })
 export class BannerButtonComponent {
-    @Input() item: buttonItemInterface = new class implements buttonItemInterface {
-        link: string = "";
-        style: string = "";
-        text: string = "";
+    @Input() public item: buttonItem = {
+        link: "",
+        style: "",
+        text: ""
     };
 }

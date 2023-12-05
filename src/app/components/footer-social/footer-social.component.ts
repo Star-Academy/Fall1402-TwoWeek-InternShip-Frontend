@@ -1,10 +1,5 @@
 import {Component, Input} from '@angular/core';
-
-interface ISocialMediaItem {
-    id: number,
-    link: string,
-    icon: string,
-}
+import {socialMediaItem} from "../modules/footer-social-media";
 
 @Component({
     selector: 'app-footer-social',
@@ -12,9 +7,9 @@ interface ISocialMediaItem {
     styleUrl: './footer-social.component.scss'
 })
 export class FooterSocialComponent {
-    @Input() items: ISocialMediaItem[] = [];
+    @Input() public items: socialMediaItem[] = [];
 
-    identify(index: number, item: ISocialMediaItem): number {
+    public identify(index: number, item: socialMediaItem): number {
         return item.id;
     };
 }

@@ -1,100 +1,62 @@
 import {Component} from '@angular/core';
-
-interface IMenuItem {
-    id: number,
-    name: string,
-    active: boolean,
-}
-
-interface IPopularGameItem {
-    id: number,
-    image: string,
-    title: string,
-    description: string,
-    link: string,
-}
-
-interface IOfferGameItem {
-    id: number,
-    image: string,
-    title: string,
-    description: string,
-    oldPrice: string,
-    price: string,
-}
-
-class menuItem implements IMenuItem {
-    id: number = 0;
-    name: string = "";
-    active: boolean = false;
-
-    constructor(id: number, name: string, active: boolean) {
-        this.id = id;
-        this.name = name;
-        this.active = active;
-    }
-}
-
-class popularGameItem implements IPopularGameItem {
-    id: number = 0;
-    image: string = "";
-    title: string = "";
-    description: string = "";
-    link: string = "";
-
-    constructor(id: number, image: string, title: string, description: string, link: string) {
-        this.id = id;
-        this.image = image;
-        this.title = title;
-        this.description = description;
-        this.link = link;
-    }
-}
-
-class offerGameItem implements IOfferGameItem {
-    id: number = 0;
-    image: string = "";
-    title: string = "";
-    description: string = "";
-    oldPrice: string = "";
-    price: string = "";
-
-    constructor(id: number, image: string, title: string, description: string, oldPrice: string, price: string) {
-        this.id = id;
-        this.image = image;
-        this.title = title;
-        this.description = description;
-        this.oldPrice = oldPrice;
-        this.price = price;
-    }
-}
+import {menuItem} from "../../components/modules/header-lower-menu";
+import {popularGameItem} from "./modules/popular-game";
+import {offerGameItem} from "./modules/offer-game";
 
 @Component({
-    selector: 'app-landing',
-    templateUrl: './landing.component.html',
-    styleUrl: './landing.component.scss'
+  selector: 'app-landing',
+  templateUrl: './landing.component.html',
+  styleUrl: './landing.component.scss'
 })
 export class LandingComponent {
-    menu: menuItem[] = [
-        new menuItem(0, "بازی ها", false),
-        new menuItem(1, "انواع کیفیت کارت ها", true),
-        new menuItem(2, "خدمات", false),
-        new menuItem(3, "درون بازی ای", false),
-        new menuItem(4, "سوالات متداول", false),
-    ];
+  public menu: menuItem[] = [
+    {id: 0, name: "بازی ها", active: false},
+    {id: 1, name: "انواع کیفیت کارت ها", active: true},
+    {id: 2, name: "خدمات", active: false},
+    {id: 3, name: "درون بازی ای", active: false},
+    {id: 4, name: "سوالات متداول", active: false},
+  ];
 
-    popularGame: popularGameItem[] = [
-        new popularGameItem(0, "/assets/images/pubg.webp", "بازی پابجی موبایل", "Buy pubg mobile", "/"),
-        new popularGameItem(1, "/assets/images/pubg.webp", "بازی پابجی موبایل", "Buy pubg mobile", "/"),
-        new popularGameItem(2, "/assets/images/pubg.webp", "بازی پابجی موبایل", "Buy pubg mobile", "/"),
-        new popularGameItem(3, "/assets/images/pubg.webp", "بازی پابجی موبایل", "Buy pubg mobile", "/"),
-        new popularGameItem(4, "/assets/images/pubg.webp", "بازی پابجی موبایل", "Buy pubg mobile", "/"),
-    ];
+  public popularGame: popularGameItem[] = [
+    {id: 0, image: "/assets/images/pubg.webp", title: "بازی پابجی موبایل", description: "Buy pubg mobile", link: "/"},
+    {id: 1, image: "/assets/images/pubg.webp", title: "بازی پابجی موبایل", description: "Buy pubg mobile", link: "/"},
+    {id: 2, image: "/assets/images/pubg.webp", title: "بازی پابجی موبایل", description: "Buy pubg mobile", link: "/"},
+    {id: 3, image: "/assets/images/pubg.webp", title: "بازی پابجی موبایل", description: "Buy pubg mobile", link: "/"},
+    {id: 4, image: "/assets/images/pubg.webp", title: "بازی پابجی موبایل", description: "Buy pubg mobile", link: "/"},
+  ];
 
-    offerGame: offerGameItem[] = [
-        new offerGameItem(0, "/assets/images/callofduty.webp", "خرید پی آر کال آف دیوتی", "buy cp game call of duty mobile", "2,500,000", "2,000,000"),
-        new offerGameItem(1, "/assets/images/callofduty.webp", "خرید پی آر کال آف دیوتی", "buy cp game call of duty mobile", "2,500,000", "2,000,000"),
-        new offerGameItem(2, "/assets/images/callofduty.webp", "خرید پی آر کال آف دیوتی", "buy cp game call of duty mobile", "2,500,000", "2,000,000"),
-        new offerGameItem(3, "/assets/images/callofduty.webp", "خرید پی آر کال آف دیوتی", "buy cp game call of duty mobile", "2,500,000", "2,000,000"),
-    ];
+  public offerGame: offerGameItem[] = [
+    {
+      id: 0,
+      image: "/assets/images/callofduty.webp",
+      title: "خرید پی آر کال آف دیوتی",
+      description: "buy cp game call of duty mobile",
+      oldPrice: "2,500,000",
+      price: "2,000,000"
+    },
+    {
+      id: 1,
+      image: "/assets/images/callofduty.webp",
+      title: "خرید پی آر کال آف دیوتی",
+      description: "buy cp game call of duty mobile",
+      oldPrice: "2,500,000",
+      price: "2,000,000"
+    },
+    {
+      id: 2,
+      image: "/assets/images/callofduty.webp",
+      title: "خرید پی آر کال آف دیوتی",
+      description: "buy cp game call of duty mobile",
+      oldPrice: "2,500,000",
+      price: "2,000,000"
+    },
+    {
+      id: 3,
+      image: "/assets/images/callofduty.webp",
+      title: "خرید پی آر کال آف دیوتی",
+      description: "buy cp game call of duty mobile",
+      oldPrice: "2,500,000",
+      price: "2,000,000"
+    },
+  ];
 }

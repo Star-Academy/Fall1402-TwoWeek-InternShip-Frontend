@@ -1,9 +1,5 @@
 import {Component, Input} from '@angular/core';
-
-interface IPhoneItem {
-    id: number,
-    phone: string,
-}
+import {phoneItem} from "../modules/footer-phone";
 
 @Component({
     selector: 'app-footer-phone',
@@ -11,9 +7,9 @@ interface IPhoneItem {
     styleUrl: './footer-phone.component.scss'
 })
 export class FooterPhoneComponent {
-    @Input() items: IPhoneItem[] = [];
+    @Input() public items: phoneItem[] = [];
 
-    identify(index: number, item: IPhoneItem): number {
+    public identify(index: number, item: phoneItem): number {
         return item.id;
     }
 }

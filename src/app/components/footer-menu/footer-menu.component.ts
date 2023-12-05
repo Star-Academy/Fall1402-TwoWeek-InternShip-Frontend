@@ -1,10 +1,5 @@
 import {Component, Input} from '@angular/core';
-
-interface IMenuItem {
-    id: number,
-    link: string,
-    text: string,
-}
+import {menuItem} from "../modules/footer-menu";
 
 @Component({
     selector: 'app-footer-menu',
@@ -12,9 +7,9 @@ interface IMenuItem {
     styleUrl: './footer-menu.component.scss'
 })
 export class FooterMenuComponent {
-    @Input() items: IMenuItem[] = [];
+    @Input() public items: menuItem[] = [];
 
-    identify(index: number, item: IMenuItem): number {
+    public identify(index: number, item: menuItem): number {
         return item.id;
     }
 }

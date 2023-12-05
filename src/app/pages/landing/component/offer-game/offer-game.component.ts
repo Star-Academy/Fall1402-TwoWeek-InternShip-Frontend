@@ -1,13 +1,5 @@
 import {Component, Input} from '@angular/core';
-
-interface offerGameItemInterface {
-    id: number,
-    image: string,
-    title: string,
-    description: string,
-    oldPrice: string,
-    price: string,
-}
+import {offerGameItem} from "../../modules/offer-game";
 
 @Component({
     selector: 'app-offer-game',
@@ -15,9 +7,9 @@ interface offerGameItemInterface {
     styleUrl: './offer-game.component.scss'
 })
 export class OfferGameComponent {
-    @Input() items: offerGameItemInterface[] = [];
+    @Input() public items: offerGameItem[] = [];
 
-    identify(index: number, item: offerGameItemInterface): number {
+    public identify(index: number, item: offerGameItem): number {
         return item.id;
     }
 }
