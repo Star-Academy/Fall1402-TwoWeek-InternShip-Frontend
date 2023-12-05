@@ -7,7 +7,7 @@
 
   <nav class="navigate">
     <ul>
-      <li *ngFor="let item of menu; trackBy: identify" [ngClass]="{'active' : item.active}">
+      <li *ngFor="let item of menu; trackBy: identify" [ngClass]="myClass(item)">
         <a [routerLink]="item.link">
           {{item.name}}
         </a>

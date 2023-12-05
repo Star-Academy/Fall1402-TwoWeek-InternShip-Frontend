@@ -2,7 +2,7 @@
     <div class="burger-menu"><i class="fa-solid fa-bars fa-2xl"></i></div>
     <nav>
         <ul>
-            <li *ngFor="let item of menu; trackBy: identify" [ngClass]="{'active' : item.active}">
+            <li *ngFor="let item of menu; trackBy: identify" [ngClass]="myClass(item)">
                 <a [routerLink]="[]">
                     {{item.name}}
                     <fa-icon [icon]="faChevronDown"></fa-icon>

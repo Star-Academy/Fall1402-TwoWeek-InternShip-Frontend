@@ -20,5 +20,10 @@ export class UpperHeaderComponent {
   }
 
   public faCartShopping = faCartShopping;
+
   public faUser = faUser;
+
+  public myClass(item : menuItem): string{
+    return item.active ? 'active' : '';
+  }
 }
