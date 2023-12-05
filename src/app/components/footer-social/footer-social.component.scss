@@ -1,0 +1,24 @@
+@use "./../../../styles/mixin" as *;
+
+ul {
+  @include flex-box();
+  gap: 2rem;
+
+  li a {
+    @include flex-box($align: center, $justify: center);
+
+    inline-size: 3rem;
+    block-size: 3rem;
+
+    background-color: hsl(260, 63%, 58%);
+
+    border: 0.01rem solid hsla(0, 0%, 20%, 0.43);
+
+    border-radius: 50%;
+
+    fa-icon{
+      @include flex-box($align: center, $justify: center);
+    }
+  }
+}
+

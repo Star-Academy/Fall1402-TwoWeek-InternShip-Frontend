@@ -1,0 +1,48 @@
+<section class="offer">
+    <div class="text">
+        <fa-icon class="icon" [icon]="faPercent"></fa-icon>
+        <h3>
+            تخفیفات
+            <br>
+            <span>شگفت انگیز</span>
+        </h3>
+
+        <a [routerLink]="'/shop'">مشاهده همه<fa-icon [icon]="faArrowLeft"></fa-icon></a>
+    </div>
+
+    <div class="carousel">
+        <button class="right">
+            <fa-icon [icon]="faArrowLeft"></fa-icon>
+        </button>
+
+        <ul>
+            <li *ngFor="let item of items; trackBy: identify">
+                <div>
+                    <img [ngSrc]="item.image" alt="call of duty banner" width="230" height="300">
+
+                    <div class="description">
+                        <div class="title">
+                            <h3>{{item.title}}</h3>
+                            <p>{{item.description}}</p>
+                        </div>
+
+                        <div class="buy">
+                            <button>
+                                <fa-icon [icon]="faCartShopping"></fa-icon>
+                            </button>
+
+                            <div class="price">
+                                <del>{{item.oldPrice}}</del>
+                                <p>{{item.price}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <button class="left">
+            <fa-icon [icon]="faArrowRight"></fa-icon>
+        </button>
+    </div>
+</section>

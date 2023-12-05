@@ -1,0 +1,56 @@
+@use "styles/variables" as *;
+@use "styles/mixin" as *;
+
+@font-face {
+  font-family: Vazir;
+  src: url('assets/fonts/Vazir.eot');
+  src: url('assets/fonts/Vazir.woff') format('woff'),
+  url('assets/fonts/Vazir.ttf') format('truetype');
+  font-weight: normal;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+*  {
+  font-family: "Vazir", serif;
+}
+
+h1, h2, h3, a, li, p{
+  color: white;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: $dark;
+}
+
+button, input {
+  background: transparent;
+
+  border: none;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+app-landing {
+  @include flex-box($direction: column, $align: center);
+  gap: 5rem;
+}

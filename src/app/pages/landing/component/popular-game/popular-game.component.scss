@@ -1,0 +1,76 @@
+@use "./../../../../../styles/variables" as *;
+@use "./../../../../../styles/mixin" as *;
+
+.popular-game {
+  position: relative;
+
+  button {
+    @include flex-box($align: center, $justify: center);
+
+    inline-size: 5rem;
+    block-size: 5rem;
+
+    background-color: hsl(225, 28%, 30%);
+
+    inset-block-start: 50%;
+
+    position: absolute;
+
+    transform: translateY(-50%);
+
+    border-radius: 50%;
+  }
+
+  button.right {
+    inset-inline-end: -2.5rem;
+
+    z-index: 1;
+  }
+
+  button.left {
+    inset-inline-start: -2.5rem;
+  }
+
+  ul {
+    @include flex-box();
+    gap: 2rem;
+
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      block-size: 0;
+    }
+
+    li {
+      @include flex-box($direction: column, $align: center, $justify: center);
+
+      min-inline-size: 21rem;
+
+      padding-block-start: 3rem;
+      padding-block-end: 1rem;
+
+      background-color: $dark-purple;
+
+      border-radius: 1.4rem;
+
+      img {
+        inline-size: 50%;
+
+        padding-block-end: 1rem;
+
+        border-radius: 50%;
+      }
+
+      p {
+        padding-block-start: 0.2rem;
+
+        color: $dark-white;
+      }
+    }
+
+    a {
+      @include flex-box($align: center, $justify: center);
+      gap: 0.2rem;
+    }
+  }
+}

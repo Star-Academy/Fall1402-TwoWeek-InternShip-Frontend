@@ -1,0 +1,164 @@
+@use "./../../../styles/variables" as *;
+@use "./../../../styles/mixin" as *;
+
+.lower-part {
+  @include flex-box($align: center, $justify: space-between);
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  inline-size: 100%;
+
+  background-color: $dark-purple;
+
+  padding-inline-end: 1.2rem;
+
+  border-radius: 1.5rem;
+
+  .burger-menu {
+    color: $white;
+    display: none;
+  }
+
+  ul {
+    @include flex-box();
+
+    li a {
+      display: block;
+
+      color: $dark-white;
+
+      padding: 2rem 1.5rem;
+
+      fa-icon {
+        font-size: 1rem;
+        color: $dark-white;
+      }
+    }
+
+    li.active {
+      position: relative;
+
+      &::after {
+        content: "";
+
+        display: inline-block;
+
+        background-color: $white;
+
+        inline-size: 15%;
+        block-size: 0.2rem;
+
+        inset-block-end: -0.1rem;
+        inset-inline-end: 6.5rem;
+
+        position: absolute;
+
+        border-radius: 1rem;
+      }
+    }
+
+    .active a {
+      color: $white;
+
+      fa-icon {
+        color: $white;
+      }
+    }
+  }
+}
+
+.search {
+  @include flex-box();
+
+  background-color: $dark;
+
+  padding: 0.6rem;
+
+  border-radius: 0.7rem;
+
+  & > * {
+    padding: 0.6rem;
+  }
+
+  .filter {
+    @include flex-box($align: center, $justify: center);
+
+    background-color: $grey;
+
+    position: relative;
+
+    border-radius: 0.4rem;
+
+    fa-icon {
+
+      padding-block-start: 1rem;
+
+      &::after {
+        content: '';
+
+        display: inline-block;
+
+        background-color: $grey;
+
+        inline-size: 0.2rem;
+        block-size: 80%;
+
+        inset-inline-end: 3.5rem;
+        inset-block-start: 0.4rem;
+
+        position: absolute;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+
+  .lower-part {
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+    padding-inline-start: 2rem;
+    padding-inline-end: 1rem;
+
+    position: relative;
+
+    .burger-menu {
+      display: block;
+    }
+
+    .burger-menu:hover + nav {
+      display: block;
+    }
+
+    nav {
+      display: none;
+
+      inset-inline: 0;
+
+      inset-block-end: -8rem;
+
+      background: $dark-purple;
+
+      box-shadow: 0 8px 32px 0 hsla(236, 63%, 33%, 0.37);
+
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+
+      border: 1px solid hsla(0, 0%, 100%, 0.18);
+
+      border-radius: 1.5rem;
+
+      position: absolute;
+
+      li::after {
+        display: none !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .burger-menu:hover, .lower-part nav {
+    inset-block-end: -10rem;
+  }
+}

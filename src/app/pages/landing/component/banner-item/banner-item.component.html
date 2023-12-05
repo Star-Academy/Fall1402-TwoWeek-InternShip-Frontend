@@ -1,0 +1,9 @@
+<div class="items">
+    <ul>
+        <li *ngFor="let item of items; trackBy: identify">
+            <fa-icon [icon]="item.icon"></fa-icon>
+            <p>{{item.title}}</p>
+            <p>{{item.description}}</p>
+        </li>
+    </ul>
+</div>

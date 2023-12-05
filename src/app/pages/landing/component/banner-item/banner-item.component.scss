@@ -1,0 +1,32 @@
+@use "./../../../../../styles/mixin" as *;
+
+.items {
+  ul {
+    @include flex-box();
+    gap: 2rem;
+
+    padding-block-start: 1.2rem;
+
+    li {
+      fa-icon {
+        padding-block-end: 1.2rem;
+
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  p {
+    &:first-child {
+      font-size: 1.6rem;
+    }
+
+    &:last-child {
+      color: var(--dark-white);
+
+      padding-block-start: 0.8rem;
+
+      font-size: 1.2rem;
+    }
+  }
+}

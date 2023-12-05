@@ -1,0 +1,72 @@
+@use "./../../../styles/variables" as *;
+@use "./../../../styles/mixin" as *;
+
+footer {
+  @include flex-box($direction: column, $align: center);
+
+  inline-size: 100%;
+
+  background-color: $dark-purple;
+
+  padding: 2rem;
+}
+
+#footer {
+  @include flex-box($direction: column, $align: center);
+
+  inline-size: min(1140px, 90%);
+
+  .logo {
+    block-size: 5.5rem;
+
+    padding: 0.5rem;
+
+    border-radius: 1rem;
+  }
+
+  .title {
+    padding-block-start: 2rem;
+
+    font-size: 2.4rem;
+  }
+
+  p {
+    color: $dark-white;
+
+    padding-block-end: 2rem;
+
+    font-size: 1.2rem;
+  }
+
+  .navigate {
+    @include flex-box($align: center, $justify: space-between);
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    inline-size: 100%;
+
+    background: $gradient;
+
+    padding: 1rem 2rem;
+
+    border-radius: 1rem;
+
+    font-size: 1.2rem;
+  }
+}
+
+/* Start Media Queries */
+
+@media only screen and (max-width: 992px) {
+  #footer .navigate {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #footer .navigate {
+    justify-content: center;
+  }
+}
+
+/* End Media Queries */

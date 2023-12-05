@@ -1,0 +1,28 @@
+<div class="upper-part">
+  <div class="brand">
+    <img ngSrc="/assets/images/icon.webp" alt="game store logo" class="logo grey-background" width="55" height="55">
+
+    <h1>فروشگاه بازی</h1>
+  </div>
+
+  <nav class="navigate">
+    <ul>
+      <li *ngFor="let item of menu; trackBy: identify" [ngClass]="myClass(item)">
+        <a [routerLink]="item.link">
+          {{item.name}}
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="login">
+    <a [routerLink]="'/cart'" class="cart">
+      <fa-icon [icon]="faCartShopping"></fa-icon>
+    </a>
+
+    <a [routerLink]="'/account'" class="account">
+      <fa-icon [icon]="faUser"></fa-icon>
+      <span>ورود به حساب</span>
+    </a>
+  </div>
+</div>

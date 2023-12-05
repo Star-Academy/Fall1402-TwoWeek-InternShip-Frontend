@@ -1,0 +1,72 @@
+@use "./../../../styles/mixin" as *;
+@use "./../../../styles/variables" as *;
+
+.upper-part {
+  @include flex-box($align: center, $justify: space-between);
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  .brand {
+    @include flex-box($align: center);
+    gap: 1rem;
+  }
+
+  .logo {
+    background-color: $dark-purple;
+
+    block-size: 5.5rem;
+
+    padding: 0.5rem;
+
+    border-radius: 1rem;
+  }
+
+  .navigate {
+    ul {
+      @include flex-box();
+
+      li a {
+        display: block;
+
+        color: $dark-white;
+
+        padding: 2rem 1.5rem;
+      }
+
+      .active a {
+        color: $white;
+
+        border-top: 0.3rem solid $white;
+      }
+    }
+  }
+
+  .login {
+    @include flex-box($align: center);
+
+    .cart {
+      padding: 2rem;
+    }
+
+    .account {
+      @include flex-box($align: center);
+      gap: 1rem;
+
+      background-color: $white;
+
+      padding: 1.5rem;
+
+      border-radius: 5rem;
+
+      span, fa-icon {
+        color: $dark;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .upper-part .account span {
+    display: none;
+  }
+}
