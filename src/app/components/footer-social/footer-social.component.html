@@ -1,7 +1,7 @@
 <ul>
     <li *ngFor="let item of items; trackBy: identify">
         <a [href]="item.link">
-            <i [class]="item.icon"></i>
+            <fa-icon [icon]="item.icon"></fa-icon>
         </a>
     </li>
 </ul>

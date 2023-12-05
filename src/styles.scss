@@ -12,14 +12,16 @@
 *, *::before, *::after {
   box-sizing: border-box;
 
-  color: $white;
-
   margin: 0;
   padding: 0;
 }
 
-* {
+*  {
   font-family: "Vazir", serif;
+}
+
+h1, h2, h3, a, li, p{
+  color: white;
 }
 
 html {

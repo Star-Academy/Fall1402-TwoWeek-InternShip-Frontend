@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {menuItem} from "../modules/header-upper-menu";
+import { faCartShopping, faUser } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-upper-header',
@@ -17,4 +18,7 @@ export class UpperHeaderComponent {
   public identify(index: number, item: menuItem): number {
     return item.id;
   }
+
+  public faCartShopping = faCartShopping;
+  public faUser = faUser;
 }

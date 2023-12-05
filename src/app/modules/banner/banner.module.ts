@@ -4,6 +4,7 @@ import {BannerComponent} from "../../pages/landing/component/banner/banner.compo
 import {BannerItemComponent} from "../../pages/landing/component/banner-item/banner-item.component";
 import {BannerButtonComponent} from "../../pages/landing/component/banner-button/banner-button.component";
 import {RouterLink} from "@angular/router";
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 
 @NgModule({
   declarations: [BannerComponent, BannerItemComponent, BannerButtonComponent],
@@ -14,6 +15,9 @@ import {RouterLink} from "@angular/router";
     CommonModule,
     RouterLink,
     NgOptimizedImage,
+    FontAwesomeModule
   ]
 })
-export class BannerModule { }
+export class BannerModule {
+
+}

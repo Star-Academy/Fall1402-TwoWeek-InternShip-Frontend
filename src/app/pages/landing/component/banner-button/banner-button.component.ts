@@ -1,5 +1,6 @@
 import {Component, Input} from '@angular/core';
 import {buttonItem} from "../../modules/banner-button";
+import {faArrowLeft} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
     selector: 'app-banner-button',
@@ -12,4 +13,6 @@ export class BannerButtonComponent {
         style: "",
         text: ""
     };
+
+    public faArrowLeft = faArrowLeft;
 }

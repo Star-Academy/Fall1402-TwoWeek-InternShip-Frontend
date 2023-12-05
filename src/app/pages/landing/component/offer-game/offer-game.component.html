@@ -1,19 +1,18 @@
 <section class="offer">
     <div class="text">
-        <i class="fa-solid fa-percent"></i>
-
+        <fa-icon class="icon" [icon]="faPercent"></fa-icon>
         <h3>
             تخفیفات
             <br>
             <span>شگفت انگیز</span>
         </h3>
 
-        <a [routerLink]="'/shop'">مشاهده همه<i class="fa-solid fa-arrow-left"></i></a>
+        <a [routerLink]="'/shop'">مشاهده همه<fa-icon [icon]="faArrowLeft"></fa-icon></a>
     </div>
 
     <div class="carousel">
         <button class="right">
-            <i class="fa-solid fa-arrow-left"></i>
+            <fa-icon [icon]="faArrowLeft"></fa-icon>
         </button>
 
         <ul>
@@ -29,7 +28,7 @@
 
                         <div class="buy">
                             <button>
-                                <i class="fa-solid fa-cart-shopping"></i>
+                                <fa-icon [icon]="faCartShopping"></fa-icon>
                             </button>
 
                             <div class="price">
@@ -43,7 +42,7 @@
         </ul>
 
         <button class="left">
-            <i class="fa-solid fa-arrow-right"></i>
+            <fa-icon [icon]="faArrowRight"></fa-icon>
         </button>
     </div>
 </section>

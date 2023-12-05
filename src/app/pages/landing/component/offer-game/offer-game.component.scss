@@ -1,145 +1,146 @@
 @use "./../../../../../styles/mixin" as *;
 @use "./../../../../../styles/variables" as *;
 
-.offer {
-  @include flex-box($align: center);
-  gap: 5rem;
+::ng-deep{
+  .offer {
+    @include flex-box($align: center);
+    gap: 5rem;
 
-  background-color: hsl(228, 36%, 13%);
+    background-color: hsl(228, 36%, 13%);
 
-  padding: 5rem;
+    padding: 5rem;
 
-  border-radius: 1.4rem;
+    border-radius: 1.4rem;
 
-  .text {
-    flex: 3;
+    .text {
+      flex: 3;
 
-    .fa-percent {
-      background: $gradient;
+      .icon {
+        padding-block-end: 2rem;
 
-      padding-block-end: 2rem;
+        font-size: 6rem;
+      }
 
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      h3 {
+        padding-block-end: 2rem;
 
-      font-size: 6rem;
-    }
+        font-size: 3rem;
+        font-weight: lighter;
 
-    h3 {
-      padding-block-end: 2rem;
+        span {
+          font-weight: bold;
+        }
+      }
 
-      font-size: 3rem;
-      font-weight: lighter;
+      a {
+        @include flex-box($align: center);
+        gap: 0.5rem;
 
-      span {
-        font-weight: bold;
+        font-size: 1.4rem;
       }
     }
 
-    a {
-      @include flex-box($align: center);
-      gap: 0.5rem;
+    .carousel {
+      flex: 7;
 
-      font-size: 1.4rem;
+      inline-size: 0;
+
+      position: relative;
+
+      ul {
+        @include flex-box();
+        gap: 2rem;
+
+        overflow-x: auto;
+
+        &::-webkit-scrollbar {
+          block-size: 0;
+        }
+
+        li {
+          min-inline-size: 23rem;
+
+          position: relative;
+
+          img {
+            inline-size: 100%;
+
+            border-radius: 1.4rem;
+          }
+
+          .description {
+            @include flex-box($direction: column, $align: center, $justify: space-between);
+
+            inline-size: 100%;
+            block-size: 50%;
+
+            background-color: hsla(0, 0%, 0%, 0.73);
+
+            padding: 3rem;
+
+            inset-block-end: 0.5rem;
+
+            position: absolute;
+
+            border-radius: 1.4rem;
+
+            .title {
+              @include flex-box($direction: column, $align: center);
+            }
+
+            .buy {
+              @include flex-box($justify: space-between);
+
+              inline-size: 100%;
+            }
+
+            .price {
+              @include flex-box($direction: column, $align: flex-end);
+
+              del {
+                color: $dark-white;
+              }
+
+              p {
+                color: $white;
+
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+
+      button.right, button.left {
+        @include flex-box($align: center, $justify: center);
+
+        inline-size: 5rem;
+        block-size: 5rem;
+
+        inset-block-start: 50%;
+
+        background-color: hsl(225, 28%, 30%);
+
+        transform: translateY(-50%);
+
+        position: absolute;
+
+        border-radius: 50%;
+      }
+
+      button.right {
+        inset-inline-end: -2.5rem;
+
+        z-index: 1;
+      }
+
+      button.left {
+        inset-inline-start: -2.5rem;
+      }
     }
   }
 
-  .carousel {
-    flex: 7;
-
-    inline-size: 0;
-
-    position: relative;
-
-    ul {
-      @include flex-box();
-      gap: 2rem;
-
-      overflow-x: auto;
-
-      &::-webkit-scrollbar {
-        block-size: 0;
-      }
-
-      li {
-        min-inline-size: 23rem;
-
-        position: relative;
-
-        img {
-          inline-size: 100%;
-
-          border-radius: 1.4rem;
-        }
-
-        .description {
-          @include flex-box($direction: column, $align: center, $justify: space-between);
-
-          inline-size: 100%;
-          block-size: 50%;
-
-          background-color: hsla(0, 0%, 0%, 0.73);
-
-          padding: 3rem;
-
-          inset-block-end: 0.5rem;
-
-          position: absolute;
-
-          border-radius: 1.4rem;
-
-          .title {
-            @include flex-box($direction: column, $align: center);
-          }
-
-          .buy {
-            @include flex-box($justify: space-between);
-
-            inline-size: 100%;
-          }
-
-          .price {
-            @include flex-box($direction: column, $align: flex-end);
-
-            del {
-              color: $dark-white;
-            }
-
-            p {
-              color: $white;
-
-              font-size: 1.2rem;
-            }
-          }
-        }
-      }
-    }
-
-    button.right, button.left {
-      @include flex-box($align: center, $justify: center);
-
-      inline-size: 5rem;
-      block-size: 5rem;
-
-      inset-block-start: 50%;
-
-      background-color: hsl(225, 28%, 30%);
-
-      transform: translateY(-50%);
-
-      position: absolute;
-
-      border-radius: 50%;
-    }
-
-    button.right {
-      inset-inline-end: -2.5rem;
-
-      z-index: 1;
-    }
-
-    button.left {
-      inset-inline-start: -2.5rem;
-    }
+  fa-icon{
+    color: $white;
   }
 }

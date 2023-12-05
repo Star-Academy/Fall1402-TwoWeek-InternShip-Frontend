@@ -1,5 +1,6 @@
 import {Component, Input} from '@angular/core';
 import {menuItem} from "../modules/header-lower-menu";
+import {faMagnifyingGlass, faFilter, faChevronDown} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
     selector: 'app-lower-header',
@@ -12,4 +13,10 @@ export class LowerHeaderComponent {
     public identify(index: number, item: menuItem): number {
         return item.id;
     };
+
+    public faFilter = faFilter;
+
+    public faMagnifyingGlass = faMagnifyingGlass;
+
+    public faChevronDown = faChevronDown;
 }

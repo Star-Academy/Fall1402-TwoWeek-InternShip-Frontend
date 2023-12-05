@@ -15,6 +15,7 @@
   border-radius: 1.5rem;
 
   .burger-menu {
+    color: $white;
     display: none;
   }
 
@@ -28,12 +29,9 @@
 
       padding: 2rem 1.5rem;
 
-      i {
+      fa-icon {
         font-size: 1rem;
-
-        &::before {
-          color: $dark-white;
-        }
+        color: $dark-white;
       }
     }
 
@@ -62,7 +60,7 @@
     .active a {
       color: $white;
 
-      i::before {
+      fa-icon {
         color: $white;
       }
     }
@@ -70,6 +68,8 @@
 }
 
 .search {
+  @include flex-box();
+
   background-color: $dark;
 
   padding: 0.6rem;
@@ -81,13 +81,16 @@
   }
 
   .filter {
+    @include flex-box($align: center, $justify: center);
+
     background-color: $grey;
 
     position: relative;
 
     border-radius: 0.4rem;
 
-    i {
+    fa-icon {
+
       padding-block-start: 1rem;
 
       &::after {

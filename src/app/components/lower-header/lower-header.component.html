@@ -5,7 +5,7 @@
             <li *ngFor="let item of menu; trackBy: identify" [ngClass]="{'active' : item.active}">
                 <a [routerLink]="[]">
                     {{item.name}}
-                    <i class="fa-solid fa-chevron-down"></i>
+                    <fa-icon [icon]="faChevronDown"></fa-icon>
                 </a>
             </li>
         </ul>
@@ -13,13 +13,13 @@
 
     <div class="search">
         <button>
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <fa-icon [icon]="faMagnifyingGlass"></fa-icon>
         </button>
 
         <input placeholder="جست و جوی آیتم ها">
 
         <button class="filter">
-            <i class="fa-solid fa-filter"></i>
+            <fa-icon [icon]="faFilter"></fa-icon>
         </button>
     </div>
 </div>

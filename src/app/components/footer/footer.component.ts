@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {menuItem} from "../modules/footer-menu";
 import {socialMediaItem} from "../modules/footer-social-media";
 import {phoneItem} from "../modules/footer-phone";
+import {faYoutube, faFacebook, faTwitter, faDiscord} from "@fortawesome/free-brands-svg-icons";
 
 @Component({
   selector: 'app-footer',
@@ -17,10 +18,10 @@ export class FooterComponent {
   ];
 
   public socialMedia: socialMediaItem[] = [
-    {id: 0, link: "#", icon: "fa-brands fa-youtube"},
-    {id: 1, link: "#", icon: "fa-brands fa-twitter"},
-    {id: 2, link: "#", icon: "fa-brands fa-discord"},
-    {id: 3, link: "#", icon: "fa-brands fa-facebook"}
+    {id: 0, link: "#", icon: faFacebook},
+    {id: 1, link: "#", icon: faTwitter},
+    {id: 2, link: "#", icon: faDiscord},
+    {id: 3, link: "#", icon: faYoutube},
   ];
 
   public phones: phoneItem[] = [

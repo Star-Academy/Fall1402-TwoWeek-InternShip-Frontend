@@ -1,6 +1,6 @@
 <section class="popular-game">
     <button class="right">
-        <i class="fa-solid fa-arrow-left"></i>
+        <fa-icon [icon]="faArrowLeft"></fa-icon>
     </button>
 
     <ul>
@@ -10,12 +10,12 @@
             <p>{{item.description}}</p>
             <a [routerLink]="item.link">
                 ادامه مطلب
-                <i class="fa-solid fa-arrow-left"></i>
+                <fa-icon [icon]="faArrowLeft"></fa-icon>
             </a>
         </li>
     </ul>
 
     <button class="left">
-        <i class="fa-solid fa-arrow-right"></i>
+        <fa-icon [icon]="faArrowRight"></fa-icon>
     </button>
 </section>

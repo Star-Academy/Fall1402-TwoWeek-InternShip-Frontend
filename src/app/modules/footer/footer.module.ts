@@ -5,6 +5,7 @@ import {FooterSocialComponent} from "../../components/footer-social/footer-socia
 import {FooterPhoneComponent} from "../../components/footer-phone/footer-phone.component";
 import {FooterComponent} from "../../components/footer/footer.component";
 import {RouterLink} from "@angular/router";
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 
 @NgModule({
   declarations: [FooterPhoneComponent, FooterMenuComponent, FooterSocialComponent, FooterComponent,],
@@ -17,7 +18,8 @@ import {RouterLink} from "@angular/router";
   imports: [
     CommonModule,
     RouterLink,
-    NgOptimizedImage
+    NgOptimizedImage,
+    FontAwesomeModule
   ]
 })
 export class FooterModule { }
