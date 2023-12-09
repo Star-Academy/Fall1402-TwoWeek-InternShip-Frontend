@@ -46,4 +46,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ SECRETS.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: deploy_dist/Fall1402-TwoWeek-InternShip-Frontend
+          FOLDER: deploy_dist/
