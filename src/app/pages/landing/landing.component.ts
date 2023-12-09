@@ -18,17 +18,17 @@ export class LandingComponent {
   ];
 
   public popularGame: popularGameItem[] = [
-    {id: 0, image: "/assets/images/pubg.webp", title: "بازی پابجی موبایل", description: "Buy pubg mobile", link: "/"},
-    {id: 1, image: "/assets/images/pubg.webp", title: "بازی پابجی موبایل", description: "Buy pubg mobile", link: "/"},
-    {id: 2, image: "/assets/images/pubg.webp", title: "بازی پابجی موبایل", description: "Buy pubg mobile", link: "/"},
-    {id: 3, image: "/assets/images/pubg.webp", title: "بازی پابجی موبایل", description: "Buy pubg mobile", link: "/"},
-    {id: 4, image: "/assets/images/pubg.webp", title: "بازی پابجی موبایل", description: "Buy pubg mobile", link: "/"},
+    {id: 0, image: "assets/images/pubg.webp", title: "بازی پابجی موبایل", description: "Buy pubg mobile", link: "/"},
+    {id: 1, image: "assets/images/pubg.webp", title: "بازی پابجی موبایل", description: "Buy pubg mobile", link: "/"},
+    {id: 2, image: "assets/images/pubg.webp", title: "بازی پابجی موبایل", description: "Buy pubg mobile", link: "/"},
+    {id: 3, image: "assets/images/pubg.webp", title: "بازی پابجی موبایل", description: "Buy pubg mobile", link: "/"},
+    {id: 4, image: "assets/images/pubg.webp", title: "بازی پابجی موبایل", description: "Buy pubg mobile", link: "/"},
   ];
 
   public offerGame: offerGameItem[] = [
     {
       id: 0,
-      image: "/assets/images/callofduty.webp",
+      image: "assets/images/callofduty.webp",
       title: "خرید پی آر کال آف دیوتی",
       description: "buy cp game call of duty mobile",
       oldPrice: "2,500,000",
@@ -36,7 +36,7 @@ export class LandingComponent {
     },
     {
       id: 1,
-      image: "/assets/images/callofduty.webp",
+      image: "assets/images/callofduty.webp",
       title: "خرید پی آر کال آف دیوتی",
       description: "buy cp game call of duty mobile",
       oldPrice: "2,500,000",
@@ -44,7 +44,7 @@ export class LandingComponent {
     },
     {
       id: 2,
-      image: "/assets/images/callofduty.webp",
+      image: "assets/images/callofduty.webp",
       title: "خرید پی آر کال آف دیوتی",
       description: "buy cp game call of duty mobile",
       oldPrice: "2,500,000",
@@ -52,7 +52,7 @@ export class LandingComponent {
     },
     {
       id: 3,
-      image: "/assets/images/callofduty.webp",
+      image: "assets/images/callofduty.webp",
       title: "خرید پی آر کال آف دیوتی",
       description: "buy cp game call of duty mobile",
       oldPrice: "2,500,000",
